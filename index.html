@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>So Creamy | Início</title>
+  <meta name="description" content="So Creamy - Receitas deliciosas e fáceis. Sabores que derretem corações." />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <style>
+    /* SPLASH SCREEN MINIMALISTA */
+    #splash {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: linear-gradient(135deg, #b3e0ff, #e0f2ff);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+      font-family: "Playfair Display", serif;
+      animation: fadeOut 0.5s ease-out 2s forwards;
+    }
+
+    .splash-logo {
+      width: 60px; /* ícone menor e centralizado */
+      height: auto;
+    }
+
+    @keyframes fadeOut {
+      to { opacity: 0; visibility: hidden; }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Splash Screen -->
+  <div id="splash">
+    <img src="img/cupcake_logo.png (2).png" alt="Logo So Creamy" class="splash-logo">
+  </div>
+
+  <!-- TOPBAR -->
+  <header class="topbar">
+    <button id="menu-toggle" aria-label="Abrir menu" class="hamburger">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="brand">
+      <h1>So Creamy</h1>
+      <p class="slogan">Sabores que derretem corações</p>
+    </div>
+  </header>
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar" id="sidebar">
+    <div class="logo">
+      <h2>So Creamy</h2>
+      <p class="mini-slogan">Sabores que derretem corações</p>
+    </div>
+
+    <nav class="nav">
+      <ul>
+        <li><a href="categorias/alimentacao_saudavel.html"><i data-lucide="leaf"></i>Saudável</a></li>
+        <li><a href="categorias/aves.html"><i data-lucide="drumstick"></i>Aves</a></li>
+        <li><a href="categorias/bebidas.html"><i data-lucide="coffee"></i>Bebidas</a></li>
+        <li><a href="categorias/carnes.html"><i data-lucide="beef"></i>Carnes</a></li>
+        <li><a href="categorias/culinaria_internacional.html"><i data-lucide="globe-2"></i>Internacional</a></li>
+        <li><a href="categorias/frutosdomar.html"><i data-lucide="fish"></i>Frutos do Mar</a></li>
+        <li><a href="categorias/massas.html"><i data-lucide="utensils"></i>Massas</a></li>
+        <li><a href="categorias/saladas.html"><i data-lucide="salad"></i>Saladas</a></li>
+        <li><a href="categorias/sobremesas.html"><i data-lucide="ice-cream"></i>Sobremesas</a></li>
+        <li><a href="categorias/sopas.html"><i data-lucide="cup-soda"></i>Sopas</a></li>
+      </ul>
+    </nav>
+
+    <div class="sidebar-footer">
+      <div class="socials">
+        <a href="#"><i data-lucide="instagram"></i></a>
+        <a href="#"><i data-lucide="mail"></i></a>
+        <a href="#"><i data-lucide="github"></i></a>
+      </div>
+      <p class="credit">Desenvolvido por Wysley...</p>
+    </div>
+  </aside>
+
+  <!-- CONTEÚDO PRINCIPAL -->
+  <main class="main">
+    <section class="hero">
+      <div class="hero-card">
+        <h2>Bem-vindo ao So Creamy</h2>
+        <p>Receitas selecionadas, apresentação profissional e sabores incríveis!</p>
+        <a class="cta" href="categorias/sobremesas.html">Ver sobremesas</a>
+      </div>
+      <img class="hero-img" src="https://areademulher.r7.com/wp-content/uploads/2021/03/sobremesas-de-pascoa-10-receitas-deliciosas-para-adocar-o-feriado.jpg" alt="Foto sobremesa">
+    </section>
+
+    <section class="grid-section">
+      <h3>Categorias em destaque</h3>
+      <div class="cards-grid">
+        <a class="card" href="categorias/sobremesas.html">
+          <img src="https://www.iped.com.br/_upload/content/2015/05/05/segredos-sobremesas-tradicionais.jpg" alt="Sobremesas">
+          <div class="card-info">
+            <h4>Sobremesas</h4>
+            <p>Doces que encantam: receitas fáceis e apresentação impecável.</p>
+          </div>
+        </a>
+
+        <a class="card" href="categorias/massas.html">
+          <img src="https://www.receiteria.com.br/wp-content/uploads/receitas-de-massas-0.jpg" alt="Massas">
+          <div class="card-info">
+            <h4>Massas</h4>
+            <p>Molhos, técnicas e dicas para al dente perfeito.</p>
+          </div>
+        </a>
+
+        <a class="card" href="categorias/alimentacao_saudavel.html">
+          <img src="https://guiadacozinha.com.br/wp-content/uploads/2019/10/bolo-de-casca-de-banana-19857.jpg" alt="Saudável">
+          <div class="card-info">
+            <h4>Saudável</h4>
+            <p>Opções nutritivas e saborosas para o dia a dia.</p>
+          </div>
+        </a>
+
+        <a class="card" href="categorias/carnes.html">
+          <img src="https://s2.glbimg.com/HycOIww_t_K8-yxxh9iwF3rVF2I=/620x480/smart/e.glbimg.com/og/ed/f/original/2022/04/19/bife_de_chorizo_wagyu.jpg" alt="Carnes">
+          <div class="card-info">
+            <h4>Carnes</h4>
+            <p>Técnicas de cortes, temperos e preparo perfeito.</p>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <section class="about">
+      <div class="about-text">
+        <h3>Sobre o projeto</h3>
+        <p>Este site foi desenhado como apresentação avaliativa para o Instituto Federal de Alagoas.</p>
+      </div>
+      <div class="about-cta">
+        <a href="categorias/culinaria_internacional.html" class="btn-outline">Explorar internacional</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- RODAPÉ -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="brand-footer">
+        <h3>So Creamy</h3>
+        <p>Sabores que derretem corações</p>
+      </div>
+      <div class="credits">
+        <p>© 2025 So Creamy • Desenvolvido por Wysley</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    lucide.createIcons();
+
+    // Splash Screen Timer (2 segundos)
+    window.addEventListener("load", () => {
+      setTimeout(() => {
+        document.getElementById("splash").style.display = "none";
+      }, 2000);
+    });
+  </script>
+</body>
+</html>
