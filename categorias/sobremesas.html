@@ -1,37 +1,26 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Sobremesas | So Creamy</title>
 
-  <!-- Fonte igual em todas -->
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
-
-  <!-- Ícones -->
   <script src="https://unpkg.com/lucide@latest"></script>
-
-  <!-- Estilos -->
   <link rel="stylesheet" href="../style.css" />
 </head>
 
 <body>
-  <!-- Sidebar -->
   <aside class="sidebar" id="sidebar">
     <div class="logo">
       <h2>So Creamy</h2>
-      <p style="font-size:0.9rem; color:#ccc;">Sabores que derretem corações</p>
+      <p class="mini-slogan">Sabores que derretem corações</p>
     </div>
-    <a href="../index.html"
-         style="text-decoration:none;color:var(--blue-600);display:flex;align-items:center;gap:0.3rem;font-weight:600;">
-        <i data-lucide="home"></i>
-      </a>
-    </header>
-
 
     <nav class="nav">
       <ul>
-        <li><a href="alimentacao_saudavel.html"><i data-lucide="leaf"></i>Saudável</a></li>
+        <li><a href="alimentacao_saudavel.html" class="active"><i data-lucide="leaf"></i>Saudável</a></li>
         <li><a href="aves.html"><i data-lucide="drumstick"></i>Aves</a></li>
         <li><a href="bebidas.html"><i data-lucide="coffee"></i>Bebidas</a></li>
         <li><a href="carnes.html"><i data-lucide="beef"></i>Carnes</a></li>
@@ -39,48 +28,420 @@
         <li><a href="frutosdomar.html"><i data-lucide="fish"></i>Frutos do Mar</a></li>
         <li><a href="massas.html"><i data-lucide="utensils"></i>Massas</a></li>
         <li><a href="saladas.html"><i data-lucide="salad"></i>Saladas</a></li>
-        <li><a href="sobremesas.html" class="active"><i data-lucide="ice-cream"></i>Sobremesas</a></li>
+        <li><a href="sobremesas.html"><i data-lucide="ice-cream"></i>Sobremesas</a></li>
         <li><a href="sopas.html"><i data-lucide="cup-soda"></i>Sopas</a></li>
       </ul>
     </nav>
   </aside>
 
-  <!-- Conteúdo principal -->
   <main class="main">
     <header style="display:flex;justify-content:space-between;align-items:center;margin-bottom:1rem">
       <div>
         <h2 style="font-family:'Playfair Display',serif">Sobremesas</h2>
-        <p style="color:#6b7280;margin:0">Doces que encantam e adoçam o dia.</p>
+        <p style="color:#6b7280;margin:0">Saboroso, doce e irresistível.</p>
       </div>
+
       <a href="../index.html"
-         style="text-decoration:none;color:var(--blue-600);display:flex;align-items:center;gap:0.3rem;font-weight:600;">
+        style="text-decoration:none;color:var(--blue-main);display:flex;align-items:center;gap:0.3rem;font-weight:600;">
         <i data-lucide="home"></i>
       </a>
     </header>
 
-    <!-- Cards -->
     <section class="cards-grid">
       <article class="card">
-        <img src="URL_DA_SUA_IMAGEM_AQUI" alt="Mousse de chocolate">
+        <img src="fotos/sobremesas/MouseDeChocolateComCanela.jpeg" alt="Mousse de chocolate com canela">
         <div class="card-info">
-          <h4>Mousse de chocolate</h4>
-          <p>Cremosa e irresistível, um clássico.</p>
+          <h4>Mousse de chocolate com canela</h4>
+          <p class="texto-curto">
+            A receita traz ingredientes fáceis de encontrar e pode ser servida após o almoço do fim de semana ou
+            em datas comemorativas, como o Dia das Mães e a ceia de Natal ou de Ano-Novo. Aprenda o passo a passo
+            completo!
+          </p>
+          <p class="texto-completo" style="display:none;">
+            Ingredientes
+            1 envelope de gelatina incolor e sem sabor
+            50 mililitros de água morna
+            1 lata de leite condensado
+            2 latas de creme de leite
+            4 colheres de sopa de achocolatado em pó
+            canela em pó a gosto
+            chocolate meio amargo a gosto
+            Modo de Preparo
+            Dissolva o envelope de gelatina em 50 mililitros de água morna, mexendo bem até ficar homogêneo. Reserve.
+            No liquidificador, coloque 1 lata de leite condensado, 2 latas de creme de leite e 4 colheres de sopa de
+            achocolatado. Bata até formar um creme liso.
+            Com o liquidificador desligado, adicione a gelatina dissolvida e bata por mais 1 minuto para misturar bem.
+            Distribua o creme em uma travessa e polvilhe canela a gosto.
+            Leve à geladeira por, no mínimo, 3 horas ou até firmar.
+            Na hora de servir, adicione pedaços de chocolate meio amargo.
+          </p>
+          <button class="btn-ler-mais">Ler mais</button>
         </div>
       </article>
 
       <article class="card">
-        <img src="URL_DA_SUA_IMAGEM_AQUI" alt="Torta de frutas vermelhas">
+        <img src="fotos/sobremesas/BiscoitoAboboraEspeciarias.avif" alt="Biscoito de abóbora com especiarias">
         <div class="card-info">
-          <h4>Torta de frutas vermelhas</h4>
-          <p>Equilíbrio perfeito entre doçura e frescor.</p>
+          <h4>Biscoito de abóbora com especiarias</h4>
+          <p class="texto-curto">
+            Quer transformar o doce de abóbora tradicional em um biscoito macio e cheio de sabor? Essa receita
+            une o sabor marcante da abóbora com especiarias como
+            cravo, gengibre e pimenta-da-jamaica, criando uma combinação perfeita para acompanhar café da manhã
+            ou o lanche da tarde. Confira como fazer o biscoito de abóbora com especiarias!
+          </p>
+          <p class="texto-completo" style="display:none;">
+            Ingredientes
+            Doce de abóbora
+            600 gramas de abóbora-japonesa ou cabotiá sem casca em cubos pequenos. Ou use 3 xícaras de chá
+            1 xícara de açúcar ou use 200 gramas
+            5 cravos-da-índia
+            1 canela em pau
+            Biscoito de abóbora com especiarias
+            120 gramas de manteiga em temperatura ambiente
+            100 gramas de açúcar mascavo
+            1 colher de chá de cravo em pó
+            1 colher de chá de gengibre em pó
+            1 colher de chá de essência de baunilha
+            Meia colher de chá de pimenta-da-jamaica moída
+            1 pitada de sal
+            2 ovos
+            200 gramas de doce de abóbora
+            240 gramas de farinha de trigo peneirada. Ou use (1 + 3/4 xícara de chá)
+            1 colher de sopa de fermento químico em pó
+            Meia colher de chá de bicarbonato de sódio
+            160 gramas de doce de abóbora
+            Modo de Preparo
+            Doce de abóbora
+            Em uma panela, adicione 600 gramas de abóbora-japonesa ou cabotiá sem casca em cubos pequenos, 1 xícara de
+            açúcar, 5 cravos-da-índia e 1 canela em pau. Leve ao fogo médio, tampe a panela e cozinhe por 20 minutos
+            (mexa de vez em quando).
+            Depois, com a ajuda de uma espátula, amasse a abóbora (dentro da panela mesmo) até formar um purê.
+            Deixe cozinhando por 10 minutos ou até secar todo o caldo (mexendo de vez em quando) sem tampa.
+            Apague o fogo, descarte os cravos e a canela em pau e reserve o doce de abóbora até esfriar.
+            Biscoito de abóbora com especiarias
+            Em uma batedeira coloque 120 gramas de manteiga em temperatura ambiente, 100 gramas de açúcar mascavo, 1
+            colher de chá de cravo em pó, 1 colher de chá de gengibre em pó, 1 colher de chá de essência de baunilha,
+            meia colher de chá de pimenta-da-jamaica moída, 1 pitada de sal e bata em velocidade alta por 5 minutos.
+            Desligue a batedeira e adicione 2 ovos, 200 gramas de doce de abóbora, 240 gramas de farinha de trigo
+            peneirada, 1 colher de sopa de fermento químico em pó, meia colher de chá de bicarbonato de sódio e bata em
+            velocidade baixa por 2 minutos até misturar bem, limpando as laterais de vez em quando.
+            Com a ajuda de um boleador de sorvete (ou colher de sopa), pegue porções de 30 gramas e vá distribuindo em
+            uma assadeira forrada com papel-manteiga. Separe as porções com mais ou menos 4 centímetros de distância
+            para não grudarem.
+            Com as pontas dos dedos untadas com óleo, aperte levemente o centro de cada porção e coloque mais ou menos 5
+            gramas de doce de abóbora, repita o mesmo processo com as outras massas.
+            Leve ao forno preaquecido a 170 graus Célsius por 30 minutos.
+            Retire do forno, coloque em uma grade apoiada na assadeira e deixe esfriar. Sirva em seguida ou armazene em
+            pote com tampa.
+          </p>
+          <button class="btn-ler-mais">Ler mais</button>
         </div>
       </article>
 
       <article class="card">
-        <img src="URL_DA_SUA_IMAGEM_AQUI" alt="Pudim de leite">
+        <img src="fotos/sobremesas/Browniedechocolatebrancocommatcha.webp" alt="Brownie de chocolate branco com matcha">
         <div class="card-info">
-          <h4>Pudim de leite</h4>
-          <p>Tradicional, macio e com calda dourada.</p>
+          <h4>Brownie de chocolate branco com matcha</h4>
+          <p class="texto-curto">
+            Pensa em uma sobremesa que tem tudo e entrega uma camada de sabor por vez. Este brownie verde-intenso
+            vai da doçura do chocolate branco ao amarguinho do matcha, o chá verde japonês, que predomina no
+            centro, bem cremoso. Amêndoas torradas e picadas trazem crocância e as raspas de limão, fresquinhas,
+            provocam: come mais um pedacinho, vai!
+          </p>
+          <p class="texto-completo" style="display:none;">
+            Ingredientes
+            100 g de chocolate branco (cerca de ⅔ de xícara em callets)
+            100 g de manteiga
+            2 ovos
+            1 colher (sopa) de matcha
+            ⅔ de xícara (chá) de farinha de trigo
+            ⅔ de xícara (chá) de açúcar
+            ⅓ de xícara (chá) de amêndoa torrada com casca, picada grosseiramente (cerca de 50g)
+            ¼ de colher (chá) de sal
+            manteiga e farinha de trigo para untar e polvilhar a assadeira
+            creme batido a gosto para servir
+            raspas de limão a gosto para servir
+            Modo de preparo
+            Preaqueça o forno a 180 ºC (temperatura média). Unte com manteiga uma fôrma quadrada de 20 cm, polvilhe com
+            farinha e chacoalhe para espalhar por todo o fundo e laterais. Bata bem a fôrma sobre a pia para tirar o
+            excesso de farinha.
+            Leve uma panela pequena com um pouco de água ao fogo médio — ela vai servir de base para o banho-maria.
+            Corte a manteiga em cubos e transfira para uma tigela de vidro refratário (ou inox). Junte o chocolate,
+            encaixe a tigela sobre a panela com água quente e mexa com uma espátula até derreter. Retire a tigela da
+            panela e deixe amornar enquanto separa os outros ingredientes — se o chocolate estiver muito quente, pode
+            cozinhar os ovos.
+            Numa tigela pequena, quebre um ovo de cada vez e transfira para uma tigela grande — se algum estiver
+            estragado, você não perde toda a receita. Adicione o açúcar e bata com um garfo apenas para misturar as
+            claras com as gemas. Junte o sal e misture bem.
+            Acrescente o chocolate derretido aos ovos e mexa com uma espátula de silicone até obter uma mistura lisa.
+            Sobre a tigela, peneire a farinha aos poucos, mexendo a cada adição para incorporar. Acrescente o matcha e
+            misture bem. Por último, misture metade das amêndoas picadas.
+            Transfira a massa do brownie para a fôrma preparada e nivele a superfície com a espátula. Polvilhe o
+            restante das amêndoas sobre a massa e leve ao forno para assar por cerca de 20 minutos. Atenção para o
+            ponto: o brownie deve ficar com uma casquinha na superfície e o miolo cremoso.
+            Retire o brownie do forno e deixe amornar para depois levar para a geladeira; espere firmar por pelo menos 1
+            hora antes de desenformar e servir. Fica uma delícia acompanhado de creme batido e raspas de limão.
+          </p>
+          <button class="btn-ler-mais">Ler mais</button>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="fotos/sobremesas/CookieChocolate.webp" alt="Cookie com gotas de chocolate">
+        <div class="card-info">
+          <h4>Cookie com gotas de chocolate</h4>
+          <p class="texto-curto">
+            Para quem prefere uma versão mais doce, é só trocar o chocolate. O truque para que ele fique crocante
+            por fora e úmido por dentro é o estágio no congelador. Não pule essa etapa! (Falando em congelador, a
+            massa crua congela superbem.).
+          </p>
+          <p class="texto-completo" style="display:none;">
+            Ingredientes
+            200 g de chocolate amargo 70% cacau em gotas (cerca de 1 ½ xícara). Se preferir cookies mais doces, pode
+            trocar o chocolate
+            100 g de manteiga gelada em cubos
+            ½ xícara (chá) de açúcar mascavo
+            ⅓ de xícara (chá) de açúcar
+            1¾ de xícara (chá) de farinha de trigo
+            1 colher (chá) de fermento em pó
+            ⅛ de colher (chá) de bicarbonato de sódio
+            1 pitada de sal
+            1 ovo
+            Modo de preparo
+            Numa tigela, misture a farinha, o fermento, o bicarbonato e o sal. Numa tigela pequena, quebre o ovo e
+            reserve.
+            Coloque a manteiga gelada na batedeira e bata com a raquete por 20 segundos para deixá-la levemente macia –
+            não é preciso atingir o ponto pomada, é só para facilitar na hora de misturar os outros ingredientes.
+            Junte o açúcar mascavo e o açúcar refinado e bata por mais 30 segundos, até formar uma farofa úmida.
+            Acrescente o chocolate e bata apenas para misturar.
+            Adicione a mistura de farinha e bata por alguns segundos, até formar uma farofa mais seca. Junte o ovo e
+            bata por cerca de 1 minuto até a massa ficar úmida e sem pedacinhos de farinha – o processo é bem rápido
+            mesmo, a ideia é apenas incorporar os ingredientes de maneira uniforme, a massa não deve ser batida em
+            excesso para evitar o desenvolvimento do glúten, o que deixaria o cookie mais pesado.
+            Para modelar os cookies: separe ¼ de xícara (chá) da massa para cada cookie, pressionando e nivelando no
+            medidor – isso garante que todos tenham o mesmo tamanho e assem por igual. Com as mãos, modele cada porção
+            em bolas e achate, formando discos com cerca de 7 cm de diâmetro. Transfira para uma assadeira grande,
+            deixando cerca de 2 cm entre cada um.
+            Leve a assadeira ao congelador por pelo menos 1h30 – esse descanso é essencial para o cookie ficar com a
+            textura perfeita: crocante por fora e úmido por dentro.
+            Faltando 30 minutos para o fim do descanso, preaqueça o forno a 180°C (temperatura média).
+            Leve a assadeira com os cookies ao forno para assar por cerca de 15 minutos. Atenção para o ponto: os
+            cookies inflam, ficam levemente dourados na lateral, mas ainda molinhos no centro – a casquinha vai ficar
+            crocante após esfriar.
+            Retire do forno e espere 15 minutos antes de consumir, assim os cookies ficam crocantes por fora e úmidos
+            por dentro. Sirva a seguir.
+          </p>
+          <button class="btn-ler-mais">Ler mais</button>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="fotos/sobremesas/BoloChocolateDamascoNozes.webp" alt="Bolo cremoso de chocolate com damasco e nozes">
+        <div class="card-info">
+          <h4>Bolo cremoso de chocolate com damasco e nozes</h4>
+          <p class="texto-curto">
+            A massa não leva farinha nem fermento. No lugar do açúcar vai mel. E o resultado é um bolo denso,
+            supercremoso, entre o brownie e o mud cake. É uma sobremesa elegante, para fechar o jantar de forma
+            triunfante, com esse trio de sabores adorado no Leste Europeu, formado por chocolate, damasco e nozes.
+          </p>
+          <p class="texto-completo" style="display:none;">
+            Ingredientes
+            100 g de chocolate amargo (entre 50% e 60% de cacau) (cerca de ⅔ de xícara [chá] em callets)
+            1½ xícara (chá) de nozes (cerca de 150 g)
+            75 g de manteiga
+            2 ovos
+            ⅓ de xícara (chá) de mel
+            8 damascos secos (cerca de 85 g)
+            4 colheres (chá) de conhaque
+            1 pitada de sal
+            Manteiga para untar a fôrma
+            Tem mais ideias aqui!
+            Bolo cremoso de chocolate
+            Bolo cremoso de chocolate
+            Bombom de goiaba
+            Bombom de goiaba
+            Terrine aos três chocolates
+            Terrine aos três chocolates
+            Bolinho de chocolate com castanha-de-caju e mel
+            Bolinho de chocolate com castanha-de-caju e mel
+            Cupcake de chocolate
+            Cupcake de chocolate
+            Bombom de damasco e amêndoas
+            Bombom de damasco e amêndoas
+            Ingredientes
+            100 g de chocolate amargo (entre 50% e 60% de cacau) (cerca de ⅔ de xícara [chá] em callets)
+            1½ xícara (chá) de nozes (cerca de 150 g)
+            75 g de manteiga
+            2 ovos
+            ⅓ de xícara (chá) de mel
+            8 damascos secos (cerca de 85 g)
+            4 colheres (chá) de conhaque
+            1 pitada de sal
+            manteiga para untar a fôrma
+            Modo de preparo
+            Preaqueça o forno a 180 ºC (temperatura média). Unte com manteiga uma fôrma quadrada de 20 cm. Corte dois
+            retângulos de papel-manteiga de 30 cm x 20 cm. Cubra o fundo e as laterais da fôrma dispondo um pedaço de
+            papel-manteiga sobre o outro em cruz. Unte também o papel com manteiga — o bolo é cremoso e não leva
+            farinha, assim fica mais fácil de desenformar.
+            Corte os damascos em cubos de 0,5 cm, transfira para uma tigela, cubra com o conhaque e deixe de molho
+            enquanto separa o restante dos ingredientes.
+            Coloque as nozes no miniprocessador e bata até formar uma farinha grossa — você vai ter cerca de 1⅓ de
+            xícara (chá) das nozes trituradas (se preferir, bata no liquidificador, no modo pulsar).
+            Leve uma panela pequena com um pouco de água ao fogo médio — ela será usada para fazer o banho-maria. Pique
+            o chocolate e corte a manteiga em cubos. Transfira para uma tigela de vidro refratário e acrescente o mel.
+            Encaixe a tigela com o chocolate e a manteiga na panela com água quente e mexa com uma espátula até derreter
+            — a água não deve encostar no fundo da tigela; o calor do vapor é suficiente para derreter os ingredientes.
+            Retire a tigela do banho-maria e reserve.
+            Numa tigela pequena, quebre um ovo de cada vez e transfira para outra tigela grande. Misture com o batedor
+            de arame apenas para misturar as gemas com as claras. Adicione a farinha de nozes, o sal e misture bem.
+            Junte aos poucos o chocolate derretido, misturando com uma espátula até que a massa fique lisa. Por último,
+            misture o damasco hidratado (com o líquido).
+            Transfira a massa de bolo para a fôrma e leve ao forno para assar por cerca de 30 minutos. Para saber se o
+            bolo está assado, espete um palito: ele deve sair limpo.
+            Retire a assadeira do forno e deixe esfriar em temperatura ambiente antes de levar para a geladeira por, no
+            mínimo, 4 horas.
+            Na hora de servir, puxe o bolo pelo papel-manteiga com cuidado para não rachar. Vire o bolo sobre uma tábua
+            e descole o papel-manteiga. Desvire o bolo e corte em 6 fatias. Sirva com sorvete de leite e calda de
+            damasco.
+          </p>
+          <button class="btn-ler-mais">Ler mais</button>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="fotos/sobremesas/BombomGoiabada.webp" alt="Bombom de goiaba">
+        <div class="card-info">
+          <h4>Bombom de goiaba</h4>
+          <p class="texto-curto">
+            Uma das riquezas da cozinha está no casamento dos sabores. Ao fazer este bombom de chocolate recheado
+            com goiaba, a chef chocolatière Luciana Lobo estava mesmo inspirada: o resultado é incrível!
+          </p>
+          <p class="texto-completo" style="display:none;">
+            Ingredientes
+            150 g de polpa de goiaba congelada
+            1 xícara (chá) de açúcar (175 g)
+            4 g de pectina
+            90 g de xarope de glicose
+            1 colher (chá) de caldo de limão
+            Modo de preparo
+            Numa panela, coloque a polpa de goiaba e leve ao fogo baixo para descongelar. Quando atingir a temperatura
+            ambiente, retire do fogo. Não deixe a polpa esquentar.
+            Numa tigela, misture 2 colheres (sopa) de açúcar com a pectina. Este procedimento serve para o recheio não
+            empelotar durante o cozimento.
+            Adicione a mistura de açúcar com pectina à polpa de goiaba e volte a panela ao fogo médio, mexendo bem.
+            Quando ferver, acrescente o restante do açúcar, aos poucos, mexendo sempre. Junte o xarope de glicose e
+            continue mexendo por mais 5 minutos.
+            Retire a panela do fogo, misture o suco de limão, tampe e deixe a polpa esfriar.
+          </p>
+          <button class="btn-ler-mais">Ler mais</button>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="fotos/sobremesas/CupcakeChocolate.webp" alt="Cupcake de chocolate">
+        <div class="card-info">
+          <h4>Cupcake de chocolate</h4>
+          <p class="texto-curto">
+            Que tal entrar na cozinha com as crianças e preparar estes irresistíveis cupcakes?
+          </p>
+          <p class="texto-completo" style="display:none;">
+            Ingredientes
+            3 colheres (sopa) de manteiga amolecida
+            2 colheres (sopa) de cacau em pó
+            ¾ de xícara (chá) de açúcar
+            ¾ de xícara (chá) de farinha de trigo
+            1½ colher (chá) de fermento em pó
+            1 pitada de sal
+            1 ovo
+            ½ xícara (chá) de leite
+            Modo de preparo
+            Preaqueça o forno a 180 ºC (temperatura média). Coloque 12 forminhas de papel próprias para assar (não
+            precisa untar) dentro da fôrma de cupcake.
+            Na batedeira, coloque a manteiga, o cacau em pó, o açúcar, a farinha, o fermento e o sal. Atenção: a
+            manteiga não pode estar nem derretida nem dura, mas em ponto de pomada. Retire da geladeira com antecedência
+            e deixe sobre o forno para começar a amolecer ou coloque no micro-ondas, com muito cuidado para não
+            derreter, em rodadas de 10 segundos.
+            Na velocidade baixa, bata até que fique com textura de areia úmida.
+            Numa tigela, bata o ovo com o batedor de arame e em seguida misture o leite. Acrescente metade dessa mistura
+            à batedeira e aumente a velocidade ao máximo até que a massa fique lisa e cremosa. Diminua a velocidade e
+            junte o restante do líquido aos poucos, até incorporar totalmente.
+            Transfira a massa para um saco de confeitar sem bico e preencha ¾ de cada forminha. Leve ao forno para assar
+            por cerca de 35 minutos. Faça o teste do palito: insira um na massa, se sair limpo está pronto.
+          </p>
+          <button class="btn-ler-mais">Ler mais</button>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="fotos/sobremesas/Terrineaostrêschocolates.webp" alt="Terrine aos três chocolates">
+        <div class="card-info">
+          <h4>Terrine aos três chocolates</h4>
+          <p class="texto-curto">
+            Cada pessoa tem um tipo preferido de chocolate. Por isso, a chef Luciana Lobo criou esta sobremesa
+            com os três tipos de chocolate, uma irresistível terrine, que agrada a gregos e troianos.
+          </p>
+          <p class="texto-completo" style="display:none;">
+            Ingredientes
+            90 g de chocolate branco
+            90 g de chocolate ao leite
+            90 g de chocolate amargo
+            190 ml de leite
+            65 g de açúcar
+            8 gemas
+            12 g de gelatina em pó incolor e sem sabor
+            400 ml de creme de leite fresco
+            raspas de chocolate branco (para servir)
+            Modo de preparo
+            Pique fino os chocolates separadamente e transfira cada um para uma tigela grande.
+            Numa panela pequena coloque o leite, o açúcar e leve ao fogo médio. Mexa com uma espátula até aquecer e o
+            açúcar dissolver. Retire do fogo, adicione as gemas e misture bem para incorporar, sem talhar. Volte a
+            panela ao fogo médio e mexa até formar um creme amarelo espesso. Desligue o fogo e reserve.
+            Dissolva a gelatina conforme as instruções da embalagem. Adicione a gelatina derretida ao creme de gemas,
+            aos poucos, misturando com um batedor de arame.
+            Divida o creme de gemas em 3 partes iguais. Coloque cada parte do creme, ainda quente, nas tigelas com os
+            chocolates. Com espátulas (ou colheres) diferentes, para não misturar os tipos de chocolate, misture bem o
+            creme com cada chocolate até derreter.
+            Na batedeira, bata o creme de leite fresco até o ponto de chantilly.
+            Divida o chantilly em 3 partes iguais e adicione cada parte às tigelas com os cremes de chocolate. Misture
+            delicadamente, fazendo movimentos de baixo para cima, para incorporar.
+            Para montar a terrine: forre uma forma de bolo inglês com filme. Transfira primeiro o creme de chocolate
+            branco, nivele com a espátula e dê uma leve batida da forma contra a bancada para evitar a formação de
+            bolhas. Em seguida, com uma colher, coloque aos poucos o creme de chocolate ao leite, com cuidado para não
+            misturar as camadas. Nivele com uma espátula e repita com o creme de chocolate amargo.
+            Cubra com filme e leve à geladeira para esfriar e firmar antes de servir (se preferir, prepare no dia
+            anterior).
+            Na hora de servir, coloque um prato retangular sobre a forma e vire de uma só vez. Retire o filme e polvilhe
+            raspas de chocolate branco sobre a terrine.
+          </p>
+          <button class="btn-ler-mais">Ler mais</button>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="fotos/sobremesas/NibsAçucarados.webp" alt="Nibs açucarados">
+        <div class="card-info">
+          <h4>Nibs açucarados</h4>
+          <p class="texto-curto">
+            Os nibs são pedacinhos de amêndoas de cacau torradas e descascadas, uma iguaria para os amantes de
+            chocolate! Nesta receita, eles ganham uma nova camada açucarada e se transformam num acessório
+            culinário surpreendente. Experimente servir com sorvete, para decorar bolos e tortas e até para
+            incrementar a salada de frutas.
+          </p>
+          <p class="texto-completo" style="display:none;">
+            Ingredientes
+            ⅓ de xícara (chá) de nibs de cacau
+            ¼ de xícara (chá) de açúcar
+            1½ colher (sopa) de água
+            Modo de preparo
+            Numa panela pequena, misture os nibs com o açúcar e a água. Leve ao fogo médio e mexa com uma espátula de
+            silicone até começar a ferver.
+            Assim que ferver, abaixe o fogo e continue mexendo por cerca de 5 minutos, até a calda açucarar e os nibs
+            ficarem sequinhos, cobertos por uma camada de açúcar. Transfira para um prato e deixe esfriar completamente
+            antes de usar ou armazenar.
+            OBS: você pode armazenar os nibs açucarados num pote com fechamento hermético, em temperatura ambiente, por
+            até 1 mês.
+          </p>
+          <button class="btn-ler-mais">Ler mais</button>
         </div>
       </article>
     </section>
@@ -89,4 +450,5 @@
   <script src="../script.js"></script>
   <script>lucide.createIcons();</script>
 </body>
+
 </html>
