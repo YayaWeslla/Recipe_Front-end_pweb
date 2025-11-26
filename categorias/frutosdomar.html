@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Frutos do Mar | So Creamy</title>
+
+  <!-- Fonte -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="../style.css" />
+
+  <!-- Ícones -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+  <!-- Sidebar -->
+  <aside class="sidebar" id="sidebar">
+    <div class="logo">
+      <h2>So Creamy</h2>
+      <p style="font-size:0.9rem; color:#ccc;">Sabores que derretem corações</p>
+    </div>
+
+    <nav class="nav">
+      <ul>
+        <li><a href="alimentacao_saudavel.html"><i data-lucide="leaf"></i>Saudável</a></li>
+        <li><a href="aves.html"><i data-lucide="drumstick"></i>Aves</a></li>
+        <li><a href="bebidas.html"><i data-lucide="coffee"></i>Bebidas</a></li>
+        <li><a href="carnes.html"><i data-lucide="beef"></i>Carnes</a></li>
+        <li><a href="culinaria_internacional.html"><i data-lucide="globe-2"></i>Internacional</a></li>
+        <li><a href="frutosdomar.html" class="active"><i data-lucide="fish"></i>Frutos do Mar</a></li>
+        <li><a href="massas.html"><i data-lucide="utensils"></i>Massas</a></li>
+        <li><a href="saladas.html"><i data-lucide="salad"></i>Saladas</a></li>
+        <li><a href="sobremesas.html"><i data-lucide="ice-cream"></i>Sobremesas</a></li>
+        <li><a href="sopas.html"><i data-lucide="cup-soda"></i>Sopas</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <!-- Conteúdo principal -->
+  <main class="main">
+    <header style="display:flex;justify-content:space-between;align-items:center;margin-bottom:1rem;">
+      <div>
+        <h2 style="font-family:'Playfair Display',serif;">Frutos do Mar</h2>
+        <p style="color:#6b7280;margin:0;">Sabores frescos direto do oceano.</p>
+      </div>
+      <a href="../index.html"
+         style="text-decoration:none;color:var(--blue-600);display:flex;align-items:center;gap:0.3rem;font-weight:600;">
+        <i data-lucide="home"></i>
+      </a>
+    </header>
+
+
+    <!-- Cards -->
+    <section class="cards-grid">
+      <article class="card">
+        <img src="https://images.unsplash.com/photo-1604908176997-3d3a9070b1eb?auto=format&fit=crop&w=800&q=80" alt="Camarão ao alho e óleo">
+        <div class="card-info">
+          <h4>Camarão ao alho e óleo</h4>
+          <p>Sabor intenso e irresistível, ideal para ocasiões especiais.</p>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="https://images.unsplash.com/photo-1603181487014-33e92f9f3527?auto=format&fit=crop&w=800&q=80" alt="Moqueca capixaba">
+        <div class="card-info">
+          <h4>Moqueca capixaba</h4>
+          <p>Tradicional, aromática e cheia de tempero brasileiro.</p>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="https://images.unsplash.com/photo-1617196034796-73b1cb34c1ce?auto=format&fit=crop&w=800&q=80" alt="Lula grelhada">
+        <div class="card-info">
+          <h4>Lula grelhada</h4>
+          <p>Deliciosamente leve, perfeita com toque de limão.</p>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <!-- Script -->
+  <script src="../script.js"></script>
+  <script>
+    if (typeof lucide !== 'undefined') {
+      lucide.createIcons();
+    }
+  </script>
+</body>
+</html>

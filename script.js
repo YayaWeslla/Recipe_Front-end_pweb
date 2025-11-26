@@ -1,25 +1,24 @@
-// script.js - interações e animações So Creamy
 document.addEventListener('DOMContentLoaded', () => {
   lucide.createIcons();
 
   const menuToggle = document.getElementById('menu-toggle');
   const sidebar = document.getElementById('sidebar');
+  const body = document.body; 
 
-  // Toggle do menu lateral
   if (menuToggle && sidebar) {
     menuToggle.addEventListener('click', () => {
-      sidebar.classList.toggle('open');
+      sidebar.classList.toggle('closed');
+      body.classList.toggle('sidebar-closed');
     });
 
-    // Fechar sidebar ao clicar fora (mobile)
     document.addEventListener('click', (e) => {
       if (!sidebar.contains(e.target) && !menuToggle.contains(e.target) && window.innerWidth < 980) {
-        sidebar.classList.remove('open');
+        sidebar.classList.add('closed'); 
+        body.classList.add('sidebar-closed'); 
       }
     });
   }
-
-  // Animação suave ao rolar (revelar elementos)
+  
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
@@ -37,7 +36,6 @@ document.addEventListener('DOMContentLoaded', () => {
     observer.observe(el);
   });
 
-  // Scroll suave para âncoras internas
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', e => {
       e.preventDefault();
@@ -46,19 +44,39 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // Ajuste do tamanho da logo na Splash Screen
   const splashLogo = document.querySelector('.splash-logo');
   if (splashLogo) {
-    splashLogo.style.width = '80px'; // largura da logo
-    splashLogo.style.height = 'auto'; // mantém proporção
+    splashLogo.style.width = '80px';
+    splashLogo.style.height = 'auto';
     splashLogo.style.marginBottom = '1rem';
   }
+
+  const botoes = document.querySelectorAll(".btn-ler-mais");
+
+  botoes.forEach(btn => {
+    btn.addEventListener("click", () => {
+      const card = btn.closest(".card-info");
+      const textoCurto = card.querySelector(".texto-curto");
+      const textoCompleto = card.querySelector(".texto-completo");
+
+      const aberto = textoCompleto.style.display === "block";
+
+      if (aberto) {
+        textoCompleto.style.display = "none";
+        textoCurto.style.display = "block";
+        btn.textContent = "Ler mais";
+      } else {
+        textoCompleto.style.display = "block";
+        textoCurto.style.display = "none";
+        btn.textContent = "Ler menos";
+      }
+    });
+  });
 });
 
-// Splash Screen desaparece após 2 segundos
 window.addEventListener("load", () => {
   setTimeout(() => {
     const splash = document.getElementById("splash");
     if (splash) splash.style.display = "none";
-  }, 2000); // 2 segundos
+  }, 2000);
 });
