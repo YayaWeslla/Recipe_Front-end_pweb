@@ -1,37 +1,32 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Massas | So Creamy</title>
 
-  <!-- Fonte -->
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
-
-  <!-- Ícones -->
   <script src="https://unpkg.com/lucide@latest"></script>
-
-  <!-- Estilos -->
   <link rel="stylesheet" href="../style.css" />
 </head>
 
 <body>
-  <!-- Sidebar -->
   <aside class="sidebar" id="sidebar">
     <div class="logo">
       <h2>So Creamy</h2>
-      <p style="font-size:0.9rem; color:#ccc;">Sabores que derretem corações</p>
+      <p class="mini-slogan">Sabores que derretem corações</p>
     </div>
 
     <nav class="nav">
       <ul>
-        <li><a href="alimentacao_saudavel.html"><i data-lucide="leaf"></i>Saudável</a></li>
+        <li><a href="alimentacao_saudavel.html" class="active"><i data-lucide="leaf"></i>Saudável</a></li>
         <li><a href="aves.html"><i data-lucide="drumstick"></i>Aves</a></li>
         <li><a href="bebidas.html"><i data-lucide="coffee"></i>Bebidas</a></li>
         <li><a href="carnes.html"><i data-lucide="beef"></i>Carnes</a></li>
         <li><a href="culinaria_internacional.html"><i data-lucide="globe-2"></i>Internacional</a></li>
         <li><a href="frutosdomar.html"><i data-lucide="fish"></i>Frutos do Mar</a></li>
-        <li><a href="massas.html" class="active"><i data-lucide="utensils"></i>Massas</a></li>
+        <li><a href="massas.html"><i data-lucide="utensils"></i>Massas</a></li>
         <li><a href="saladas.html"><i data-lucide="salad"></i>Saladas</a></li>
         <li><a href="sobremesas.html"><i data-lucide="ice-cream"></i>Sobremesas</a></li>
         <li><a href="sopas.html"><i data-lucide="cup-soda"></i>Sopas</a></li>
@@ -39,42 +34,259 @@
     </nav>
   </aside>
 
-  <!-- Conteúdo -->
   <main class="main">
     <header style="display:flex;justify-content:space-between;align-items:center;margin-bottom:1rem">
       <div>
         <h2 style="font-family:'Playfair Display',serif">Massas</h2>
-        <p style="color:#6b7280;margin:0">Receitas que aquecem o coração.</p>
+        <p style="color:#6b7280;margin:0">Descubra nossas receitas deliciosas de massas.</p>
       </div>
+
       <a href="../index.html"
-         style="text-decoration:none;color:var(--blue-600);display:flex;align-items:center;gap:0.3rem;font-weight:600;">
+        style="text-decoration:none;color:var(--blue-main);display:flex;align-items:center;gap:0.3rem;font-weight:600;">
         <i data-lucide="home"></i>
       </a>
     </header>
 
-    <!-- Cards -->
     <section class="cards-grid">
       <article class="card">
-        <img src="URL_DA_SUA_IMAGEM_AQUI" alt="Espaguete à bolonhesa">
+        <img src="fotos/massas/EspagueteCarbonara.jpeg" alt="Espaguete à Carbonara">
         <div class="card-info">
-          <h4>Espaguete à bolonhesa</h4>
-          <p>Clássico italiano com molho de carne e tomate.</p>
+          <h4>Espaguete à Carbonara</h4>
+          <p class="texto-curto">
+            O espaguete à carbonara é um dos pratos mais tradicionais da culinária romana e carrega uma história
+            curiosa.
+            Sua receita original é extremamente simples, composta basicamente por ovos, queijo pecorino ou parmesão,
+            guanciale e
+            pimenta-do-reino.
+          </p>
+          <p class="texto-completo" style="display:none;">
+            Ingredientes:
+            300 g de espaguete
+            150 g de pancetta ou bacon
+            2 ovos + 1 gema
+            50 g de parmesão ralado
+            Pimenta-do-reino
+            Sal
+            Modo de preparo:
+            Cozinhe o espaguete.
+            Doure a pancetta.
+            Misture ovos, gema e parmesão em uma tigela.
+            Adicione o macarrão quente, desligue o fogo e mexa até formar o creme.
+            Finalize com pimenta.
+          </p>
+          <button class="btn-ler-mais">Ler mais</button>
         </div>
       </article>
 
       <article class="card">
-        <img src="URL_DA_SUA_IMAGEM_AQUI" alt="Lasanha de queijo">
+        <img src="fotos/massas/FettuccineAlfredo.jpeg" alt="Fettuccine Alfredo">
         <div class="card-info">
-          <h4>Lasanha de queijo</h4>
-          <p>Camadas irresistíveis de massa, queijo e molho.</p>
+          <h4>Fettuccine Alfredo</h4>
+          <p class="texto-curto">
+            O Fettuccine Alfredo é uma das massas mais cremosas e conhecidas do mundo. Criado em Roma por Alfredo di
+            Lelio, o
+            prato originalmente levava apenas manteiga e parmesão, mas se popularizou internacionalmente.
+          </p>
+          <p class="texto-completo" style="display:none;">
+            Ingredientes:
+            300 g de fettuccine
+            2 colheres de manteiga
+            200 ml de creme de leite
+            50 g de parmesão
+            Sal e pimenta
+            Modo de preparo:
+            Cozinhe o fettuccine.
+            Derreta a manteiga, adicione creme de leite e parmesão.
+            Misture a massa ao molho.
+            Finalize com pimenta.
+          </p>
+          <button class="btn-ler-mais">Ler mais</button>
         </div>
       </article>
 
       <article class="card">
-        <img src="URL_DA_SUA_IMAGEM_AQUI" alt="Nhoque ao molho pesto">
+        <img src="fotos/massas/LasanhaBolonhesa.jpeg" alt="Lasanha à Bolonhesa">
         <div class="card-info">
-          <h4>Nhoque ao molho pesto</h4>
-          <p>Delicado e aromático com manjericão fresco.</p>
+          <h4>Lasanha à Bolonhesa</h4>
+          <p class="texto-curto">
+            A lasanha à bolonhesa é um ícone da culinária italiana e símbolo de fartura. Combina perfeitamente massa,
+            carne, molho de tomate e
+            muito queijo em camadas generosas. É o tipo de prato que reúne a família e transforma qualquer almoço em
+            evento especial.
+          </p>
+          <p class="texto-completo" style="display:none;">
+            Ingredientes:
+            Massa de lasanha
+            400 g de carne moída
+            Cebola e alho
+            Molho de tomate
+            Muçarela e parmesão
+            Sal e orégano
+            Modo de preparo:
+            Refogue a carne com cebola e alho.
+            Misture o molho e tempere.
+            Monte as camadas alternando massa, molho e queijo.
+            Asse por 30–40 minutos.
+          </p>
+          <button class="btn-ler-mais">Ler mais</button>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="fotos/massas/PenneMolhoVodka.jpeg" alt="Penne ao Molho de Vodka">
+        <div class="card-info">
+          <h4>Penne ao Molho de Vodka</h4>
+          <p class="texto-curto">
+            O penne ao molho de vodka é um prato sofisticado e surpreendentemente simples. A vodka realça os sabores do
+            tomate e equilibra a
+            acidez, criando um molho rosado aveludado e intenso.
+          </p>
+          <p class="texto-completo" style="display:none;">
+            Ingredientes:
+            300 g de penne
+            Cebola picada
+            1 xícara de molho de tomate
+            ½ xícara de creme de leite
+            ¼ xícara de vodka
+            Azeite, sal e pimenta
+            Modo de preparo:
+            Refogue a cebola.
+            Adicione a vodka e deixe evaporar.
+            Junte molho de tomate e creme de leite.
+            Misture o penne cozido.
+          </p>
+          <button class="btn-ler-mais">Ler mais</button>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="fotos/massas/RavioliRicota.jpeg" alt="Ravioli de Ricota com Manteiga e Sálvia">
+        <div class="card-info">
+          <h4>Ravioli de Ricota com Manteiga e Sálvia</h4>
+          <p class="texto-curto">
+            Este prato é um clássico do norte da Itália, conhecido pela simplicidade elegante. O ravioli recheado de
+            ricota já é suave e
+            delicado, mas quando combinado ao molho de manteiga dourada com sálvia, ganha um perfume e um sabor
+            irresistíveis.
+          </p>
+          <p class="texto-completo" style="display:none;">
+            Ingredientes:
+            300 g de ravioli de ricota
+            Manteiga
+            Folhas de sálvia
+            Parmesão
+            Sal
+            Modo de preparo:
+            Cozinhe o ravioli.
+            Derreta a manteiga com sálvia até dourar.
+            Misture tudo delicadamente.
+          </p>
+          <button class="btn-ler-mais">Ler mais</button>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="fotos/massas/MacarraoPesto.jpeg" alt="Macarrão ao Pesto">
+        <div class="card-info">
+          <h4>Macarrão ao Pesto</h4>
+          <p class="texto-curto">
+            Originário de Gênova, o pesto é um dos molhos mais frescos e aromáticos da culinária italiana. Feito
+            tradicionalmente com
+            manjericão, azeite, pinoli e parmesão, ele traz uma explosão de sabor herbal
+          </p>
+          <p class="texto-completo" style="display:none;">
+            Ingredientes:
+            300 g de massa curta
+            Manjericão fresco
+            Parmesão
+            Azeite
+            Pinoli ou castanha
+            Alho e sal
+            Modo de preparo:
+            Bata todos os ingredientes até formar uma pasta.
+            Misture com o macarrão cozido.
+            Finalize com parmesão.
+          </p>
+          <button class="btn-ler-mais">Ler mais</button>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="fotos//massas/NhoquedeBatataaoSugo.jpeg" alt="Nhoque de Batata ao Sugo">
+        <div class="card-info">
+          <h4>Nhoque de Batata ao Sugo</h4>
+          <p class="texto-curto">
+            O nhoque é um prato que muitos associam à comida caseira, feita com carinho. Leve e macio quando preparado
+            corretamente,
+            ele absorve perfeitamente o molho de tomate fresco e perfumado.
+          </p>
+          <p class="texto-completo" style="display:none;">
+            Ingredientes:
+            800 g de batata
+            1 ovo
+            Farinha
+            Molho de tomate
+            Sal
+            Modo de preparo:
+            Cozinhe e amasse as batatas.
+            Misture ovo e farinha até formar a massa.
+            Modele, corte e cozinhe.
+            Cubra com o molho quente.
+          </p>
+          <button class="btn-ler-mais">Ler mais</button>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="fotos/massas/TalharimMolhoCamarão.jpeg" alt="Talharim com Molho de Camarão">
+        <div class="card-info">
+          <h4>Talharim com Molho de Camarão</h4>
+          <p class="texto-curto">
+            Esse prato une o frescor do mar com a suavidade de um molho cremoso. O camarão, quando bem temperado e
+            rapidamente salteado,
+            mantém sua maciez e sabor característico.
+          </p>
+          <p class="texto-completo" style="display:none;">
+            Ingredientes:
+            300 g de talharim
+            300 g de camarão
+            Manteiga
+            Creme de leite
+            Alho
+            Sal, pimenta e páprica
+            Modo de preparo:
+            Salteie o camarão e reserve.
+            Prepare o molho com manteiga, alho e creme.
+            Misture o talharim e finalize com os camarões.
+          </p>
+          <button class="btn-ler-mais">Ler mais</button>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="fotos/massas/PennePutanesca.jpeg" alt="Penne à Putanesca">
+        <div class="card-info">
+          <h4>Penne à Putanesca</h4>
+          <p class="texto-curto">
+            A putanesca é uma receita vibrante e cheia de personalidade. Criada em Nápoles, leva ingredientes fortes
+            como anchovas,
+            alcaparras e azeitonas, resultando em um molho salgado, aromático e muito saboroso.
+          </p>
+          <p class="texto-completo" style="display:none;">
+            Ingredientes:
+            300 g de penne
+            Alho
+            Anchovas
+            Tomate pelado
+            Alcaparras
+            Azeitonas
+            Azeite e pimenta
+            Modo de preparo:
+            Refogue alho e anchovas no azeite.
+            Adicione tomate, alcaparras e azeitonas.
+            Misture o penne cozido e sirva quente.
+          </p>
+          <button class="btn-ler-mais">Ler mais</button>
         </div>
       </article>
     </section>
@@ -83,4 +295,5 @@
   <script src="../script.js"></script>
   <script>lucide.createIcons();</script>
 </body>
+
 </html>
