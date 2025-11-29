@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Culinária Internacional | So Creamy</title>
 
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
-
   <script src="https://unpkg.com/lucide@latest"></script>
-
   <link rel="stylesheet" href="../style.css" />
 </head>
 
@@ -16,16 +15,16 @@
   <aside class="sidebar" id="sidebar">
     <div class="logo">
       <h2>So Creamy</h2>
-      <p style="font-size:0.9rem; color:#ccc;">Sabores que derretem corações</p>
+      <p class="mini-slogan">Sabores que derretem corações</p>
     </div>
 
     <nav class="nav">
       <ul>
-        <li><a href="alimentacao_saudavel.html"><i data-lucide="leaf"></i>Saudável</a></li>
+        <li><a href="alimentacao_saudavel.html" class="active"><i data-lucide="leaf"></i>Saudável</a></li>
         <li><a href="aves.html"><i data-lucide="drumstick"></i>Aves</a></li>
         <li><a href="bebidas.html"><i data-lucide="coffee"></i>Bebidas</a></li>
         <li><a href="carnes.html"><i data-lucide="beef"></i>Carnes</a></li>
-        <li><a href="culinaria_internacional.html" class="active"><i data-lucide="globe-2"></i>Internacional</a></li>
+        <li><a href="culinaria_internacional.html"><i data-lucide="globe-2"></i>Internacional</a></li>
         <li><a href="frutosdomar.html"><i data-lucide="fish"></i>Frutos do Mar</a></li>
         <li><a href="massas.html"><i data-lucide="utensils"></i>Massas</a></li>
         <li><a href="saladas.html"><i data-lucide="salad"></i>Saladas</a></li>
@@ -39,37 +38,330 @@
     <header style="display:flex;justify-content:space-between;align-items:center;margin-bottom:1rem">
       <div>
         <h2 style="font-family:'Playfair Display',serif">Culinária Internacional</h2>
-        <p style="color:#6b7280;margin:0">Sabores do mundo em um só lugar.</p>
+        <p style="color:#6b7280;margin:0">Explore sabores do mundo com nossas receitas internacionais.</p>
       </div>
+
       <a href="../index.html"
-         style="text-decoration:none;color:var(--blue-600);display:flex;align-items:center;gap:0.3rem;font-weight:600;">
+        style="text-decoration:none;color:var(--blue-main);display:flex;align-items:center;gap:0.3rem;font-weight:600;">
         <i data-lucide="home"></i>
       </a>
     </header>
 
-
     <section class="cards-grid">
       <article class="card">
-        <img src="fotos/risotoDeCamarao.jpeg" alt="Risoto de camarão com salmão">
-        <div class="card-info">
-          <h4>Risoto de camarão com salmão</h4>
-          <p>Delicado, fresco e repleto de tradição oriental.</p>
-        </div>
-      </article>
-
-      <article class="card">
-        <img src="URL_DA_SUA_IMAGEM_AQUI" alt="Paella espanhola">
-        <div class="card-info">
-          <h4>Paella espanhola</h4>
-          <p>Colorida e vibrante, com frutos do mar e açafrão.</p>
-        </div>
-      </article>
-
-      <article class="card">
-        <img src="URL_DA_SUA_IMAGEM_AQUI" alt="Tacos mexicanos">
+        <img src="fotos/culinariaInternacional/TacosMexicanos.jpeg" alt="Tacos mexicanos">
         <div class="card-info">
           <h4>Tacos mexicanos</h4>
-          <p>Cheios de sabor e personalidade em cada mordida.</p>
+          <p class="texto-curto">
+            Os tacos são uma das comidas mais populares do México. Versáteis e rápidos, são feitos com tortilhas
+            recheadas com carne
+            e acompanhamentos frescos.
+          </p>
+          <p class="texto-completo" style="display:none;">
+            Ingredientes
+            Tortilhas de milho
+            400 g de carne moída ou frango
+            1 cebola picada
+            1 tomate picado
+            Alface picada
+            Queijo ralado
+            Molho de pimenta
+            Modo de Preparo
+            Refogue a carne com a cebola.
+            Aqueça as tortilhas.
+            Monte com carne, legumes e queijo.
+            Finalize com molho picante.
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="fotos/culinariaInternacional/Yakisoba.jpeg" alt="Yakisoba">
+        <div class="card-info">
+          <h4>Yakisoba</h4>
+          <p class="texto-curto">
+            Clássico da culinária japonesa, o yakisoba é um macarrão salteado com legumes e carne em um molho levemente
+            adocicado.
+          </p>
+          <p class="texto-completo" style="display:none;">
+            Ingredientes
+            300 g de macarrão para yakisoba
+            200 g de carne em tiras
+            Repolho, cenoura e brócolis
+            2 colheres (sopa) de molho shoyu
+            1 colher (sopa) de molho de ostra
+            Azeite
+            Modo de Preparo
+            Cozinhe o macarrão.
+            Salteie carne e legumes.
+            Adicione o molho e misture tudo.
+            Sirva quente.
+          </p>
+          <button class="btn-ler-mais">Ler mais</button>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="fotos/culinariaInternacional/Ratatouille.jpeg" alt="Ratatouille">
+        <div class="card-info">
+          <h4>Ratatouille</h4>
+          <p class="texto-curto">
+            Prato provençal à base de legumes, muito aromático e colorido. Famoso por ser saudável, leve e cheio de
+            sabor.
+          </p>
+          <p class="texto-completo" style="display:none;">
+            Ingredientes
+            1 abobrinha
+            1 berinjela
+            1 pimentão
+            2 tomates
+            Azeite
+            Sal, pimenta e ervas finas
+            Modo de Preparo
+            Corte os legumes em rodelas.
+            Monte camadas num refratário.
+            Regue com azeite e tempere.
+            Asse a 180 °C por 40 minutos.
+          </p>
+          <button class="btn-ler-mais">Ler mais</button>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="fotos/culinariaInternacional/HambúrguerAmericano.jpeg" alt="Hambúrguer Americano">
+        <div class="card-info">
+          <h4>Hambúrguer Americano</h4>
+          <p class="texto-curto">
+            Um símbolo da culinária americana. Suculento e simples, o hambúrguer caseiro destaca o sabor da carne.
+          </p>
+          <p class="texto-completo" style="display:none;">
+            Ingredientes
+            500 g de carne moída
+            Sal e pimenta
+            Queijo cheddar
+            Pão de hambúrguer
+            Alface e tomate
+            Modo de Preparo
+            Modele os hambúrgueres.
+            Tempere e grelhe.
+            Monte com pão, queijo e salada.
+            Sirva com batatas.
+          </p>
+          <button class="btn-ler-mais">Ler mais</button>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="fotos/culinariaInternacional/WaffleBelga.jpeg" alt="Waffle Belga">
+        <div class="card-info">
+          <h4>Waffle Belga</h4>
+          <p class="texto-curto">
+            Famoso pelo sabor leve e textura crocante, o waffle belga é perfeito no café da manhã ou sobremesa.
+          </p>
+          <p class="texto-completo" style="display:none;">
+            Ingredientes
+            2 ovos
+            2 xícaras de farinha
+            1 colher (sopa) de fermento
+            2 colheres (sopa) de açúcar
+            1 xícara de leite
+            2 colheres (sopa) de manteiga derretida
+            Modo de Preparo
+            Misture tudo até ficar homogêneo.
+            Coloque na máquina de waffle.
+            Sirva com mel, chocolate ou frutas.
+          </p>
+          <button class="btn-ler-mais">Ler mais</button>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="fotos/culinariaInternacional/FrangoTikkaMasala.jpeg" alt="Frango Tikka Masala">
+        <div class="card-info">
+          <h4>Frango Tikka Masala</h4>
+          <p class="texto-curto">
+            Um dos pratos mais famosos da Índia. Combina frango marinado com especiarias e um molho cremoso e aromático.
+          </p>
+          <p class="texto-completo" style="display:none;">
+            Ingredientes
+            500 g de frango em cubos
+            1 pote de iogurte natural
+            Curry, cúrcuma, páprica
+            1 cebola picada
+            1 tomate picado
+            1 caixa de creme de leite
+            Modo de Preparo
+            Marine o frango no iogurte com especiarias.
+            Refogue cebola e tomate.
+            Cozinhe o frango.
+            Adicione creme de leite e finalize.
+          </p>
+          <button class="btn-ler-mais">Ler mais</button>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="fotos/culinariaInternacional/Moussaka.jpeg" alt="Moussaka">
+        <div class="card-info">
+          <h4>Moussaka</h4>
+          <p class="texto-curto">
+            Uma espécie de “lasanha grega” feita com camadas de berinjela, carne moída e molho branco.
+          </p>
+          <p class="texto-completo" style="display:none;">
+            Ingredientes
+            2 berinjelas
+            400 g de carne moída
+            1 cebola
+            2 tomates
+            Molho branco pronto
+            Queijo ralado
+            Modo de Preparo
+            Frite as berinjelas.
+            Refogue a carne com a cebola e tomates.
+            Monte camadas de berinjela, carne e molho.
+            Cubra com queijo e leve ao forno por 30 minutos.
+          </p>
+          <button class="btn-ler-mais">Ler mais</button>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="fotos/culinariaInternacional/EmpanadasArgentinas.jpeg" alt="Empanadas Argentinas">
+        <div class="card-info">
+          <h4>Empanadas Argentinas</h4>
+          <p class="texto-curto">
+            Pastéis assados recheados de carne, muito populares na Argentina. Massa leve, recheio suculento e temperos
+            marcantes.
+          </p>
+          <p class="texto-completo" style="display:none;">
+            Ingredientes
+            Massa para pastel assado
+            500 g de carne moída
+            1 cebola
+            Azeitonas
+            Ovo cozido picado
+            Sal e páprica
+            Modo de Preparo
+            Refogue carne e cebola.
+            Acrescente azeitonas e ovo.
+            Recheie as massas.
+            Asse por 25 minutos.
+          </p>
+          <button class="btn-ler-mais">Ler mais</button>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="fotos/culinariaInternacional/FrangoXadrez.jpeg" alt="Frango Xadrez">
+        <div class="card-info">
+          <h4>Frango Xadrez</h4>
+          <p class="texto-curto">
+            Colorido e agridoce, o frango xadrez é um dos pratos chineses mais populares no Brasil. Combina legumes e
+            amendoim com cubos de frango.
+          </p>
+          <p class="texto-completo" style="display:none;">
+            Ingredientes
+            400 g de peito de frango
+            Pimentão vermelho e verde
+            Cebola
+            Shoyu
+            Amendoim torrado
+            Amido de milho
+            Modo de Preparo
+            Refogue o frango.
+            Adicione legumes.
+            Coloque o shoyu e o amido dissolvido.
+            Finalize com amendoim.
+          </p>
+          <button class="btn-ler-mais">Ler mais</button>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="fotos/culinariaInternacional/PaellaEspanhola.jpeg" alt="Paella Espanhola">
+        <div class="card-info">
+          <h4>Paella Espanhola</h4>
+          <p class="texto-curto">
+            Um dos pratos mais tradicionais da Espanha. Colorida e rica, mistura frutos do mar, frango, legumes e muito
+            açafrão.
+          </p>
+          <p class="texto-completo" style="display:none;">
+            Ingredientes
+            2 xícaras de arroz
+            300 g de frango
+            200 g de camarão
+            1 pimentão
+            1 cebola
+            Açafrão ou cúrcuma
+            Caldo de legumes
+            Modo de Preparo
+            Refogue frango, cebola e pimentão.
+            Adicione o arroz e o açafrão.
+            Coloque o caldo quente aos poucos.
+            Acrescente os camarões no final e cozinhe até secar.
+          </p>
+          <button class="btn-ler-mais">Ler mais</button>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="fotos/culinariaInternacional/PadThai.jpeg" alt="Pad Thai">
+        <div class="card-info">
+          <h4>Pad Thai</h4>
+          <p class="texto-curto">
+            Um dos pratos mais famosos da culinária tailandesa, o Pad Thai é um macarrão de arroz salteado com camarão
+            ou frango,
+            molho agridoce e amendoim. É equilibrado, aromático e cheio de textura.
+          </p>
+          <p class="texto-completo" style="display:none;">
+            Ingredientes
+            200 g de macarrão de arroz
+            200 g de camarão ou frango em tiras
+            2 ovos
+            1 xícara de broto de feijão
+            Cebolinha picada
+            2 colheres (sopa) de amendoim triturado
+            2 colheres (sopa) de molho de peixe (fish sauce) — pode substituir por shoyu
+            1 colher (sopa) de açúcar
+            Suco de 1 limão
+            1 colher (sopa) de óleo
+            Modo de Preparo
+            Hidrate o macarrão de arroz em água quente por alguns minutos.
+            Aqueça o óleo, salteie o frango ou camarão.
+            Empurre para o lado da panela e adicione os ovos mexidos.
+            Coloque o macarrão, molho de peixe, açúcar e limão.
+            Misture bem e finalize com broto de feijão, amendoim e cebolinha.
+          </p>
+          <button class="btn-ler-mais">Ler mais</button>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="fotos/culinariaInternacional/Cuscuz Marroquino com Legumes.jpeg" alt="Cuscuz Marroquino com Legumes">
+        <div class="card-info">
+          <h4>Cuscuz Marroquino com Legumes</h4>
+          <p class="texto-curto">
+            Prato leve, aromático e muito versátil. O cuscuz marroquino absorve temperos com facilidade e combina com
+            legumes cozidos e
+            especiarias típicas do norte da África.
+          </p>
+          <p class="texto-completo" style="display:none;">
+            Ingredientes
+            1 xícara de cuscuz marroquino
+            1 xícara de água quente
+            1 cenoura picada
+            1 abobrinha picada
+            1 cebola picada
+            Azeite
+            Sal, cúrcuma e cominho
+            Uvas-passas (opcional)
+            Modo de Preparo
+            Hidrate o cuscuz com a água quente, cubra e espere 5 minutos.
+            Solte os grãos com um garfo.
+            Refogue os legumes no azeite com cúrcuma e cominho.
+            Misture tudo e ajuste o sal.
+            Finalize com passas, se desejar.
+          </p>
+          <button class="btn-ler-mais">Ler mais</button>
         </div>
       </article>
     </section>

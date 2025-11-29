@@ -1,81 +1,343 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Sopas | So Creamy</title>
 
-  <!-- Fonte -->
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
-
-  <!-- Ícones -->
   <script src="https://unpkg.com/lucide@latest"></script>
-
-  <!-- Estilos -->
   <link rel="stylesheet" href="../style.css" />
 </head>
 
 <body>
-  <!-- Sidebar -->
   <aside class="sidebar" id="sidebar">
     <div class="logo">
       <h2>So Creamy</h2>
-      <p style="font-size:0.9rem; color:#ccc;">Sabores que derretem corações</p>
+      <p class="mini-slogan">Sabores que derretem corações</p>
     </div>
 
     <nav class="nav">
       <ul>
-        <li><a href="alimentacao_saudavel.html"><i data-lucide="leaf"></i>Saudável</a></li>
+        <li><a href="alimentacao_saudavel.html" class="active"><i data-lucide="leaf"></i>Saudável</a></li>
         <li><a href="aves.html"><i data-lucide="drumstick"></i>Aves</a></li>
         <li><a href="bebidas.html"><i data-lucide="coffee"></i>Bebidas</a></li>
         <li><a href="carnes.html"><i data-lucide="beef"></i>Carnes</a></li>
         <li><a href="culinaria_internacional.html"><i data-lucide="globe-2"></i>Internacional</a></li>
-        <li><a href="fruntosdomar.html"><i data-lucide="fish"></i>Frutos do Mar</a></li>
+        <li><a href="frutosdomar.html"><i data-lucide="fish"></i>Frutos do Mar</a></li>
         <li><a href="massas.html"><i data-lucide="utensils"></i>Massas</a></li>
         <li><a href="saladas.html"><i data-lucide="salad"></i>Saladas</a></li>
         <li><a href="sobremesas.html"><i data-lucide="ice-cream"></i>Sobremesas</a></li>
-        <li><a href="sopas.html" class="active"><i data-lucide="cup-soda"></i>Sopas</a></li>
+        <li><a href="sopas.html"><i data-lucide="cup-soda"></i>Sopas</a></li>
       </ul>
     </nav>
   </aside>
 
-  <!-- Conteúdo -->
   <main class="main">
     <header style="display:flex;justify-content:space-between;align-items:center;margin-bottom:1rem">
       <div>
         <h2 style="font-family:'Playfair Display',serif">Sopas</h2>
-        <p style="color:#6b7280;margin:0">Conforto e sabor em cada colherada.</p>
+        <p style="color:#6b7280;margin:0">Delicie-se com nossas receitas quentes e reconfortantes de sopas.</p>
       </div>
-    <a href="../index.html"
-         style="text-decoration:none;color:var(--blue-600);display:flex;align-items:center;gap:0.3rem;font-weight:600;">
+
+      <a href="../index.html"
+        style="text-decoration:none;color:var(--blue-main);display:flex;align-items:center;gap:0.3rem;font-weight:600;">
         <i data-lucide="home"></i>
       </a>
     </header>
 
-
-    <!-- Cards -->
     <section class="cards-grid">
       <article class="card">
-        <img src="URL_DA_SUA_IMAGEM_AQUI" alt="Sopa de legumes">
+        <img src="fotos/sopas/SopaLegumesClassica.jpeg" alt="Sopa de Legumes Clássica">
         <div class="card-info">
-          <h4>Sopa de legumes</h4>
-          <p>Nutritiva e caseira, com vegetais frescos.</p>
+          <h4>Sopa de Legumes Clássica</h4>
+          <p class="texto-curto">
+            Uma sopa tradicional, nutritiva e reconfortante, perfeita para qualquer dia. Combina vários legumes cozidos
+            até ficarem macios e saborosos.
+          </p>
+          <p class="texto-completo" style="display:none;">
+            Ingredientes
+            2 batatas
+            2 cenouras
+            1 chuchu
+            1 abobrinha
+            1 cebola
+            2 dentes de alho
+            1 litro de água
+            Sal e cheiro-verde
+            Modo de Preparo
+            Refogue cebola e alho.
+            Adicione os legumes picados e água.
+            Cozinhe até amaciar.
+            Tempere e finalize com cheiro-verde.
         </div>
       </article>
 
       <article class="card">
-        <img src="URL_DA_SUA_IMAGEM_AQUI" alt="Caldo verde">
+        <img src="fotos/sopas/CremeAbóbora.jpeg" alt="Creme de Abóbora">
         <div class="card-info">
-          <h4>Caldo verde</h4>
-          <p>Tradicional e reconfortante, com couve e linguiça.</p>
+          <h4>Creme de Abóbora</h4>
+          <p class="texto-curto">
+            Cremoso, levemente adocicado e muito nutritivo, é ideal para dias frios.
+          </p>
+          <p class="texto-completo" style="display:none;">
+            Ingredientes
+            500 g de abóbora cabotiá
+            1 cebola
+            1 colher (sopa) de manteiga
+            1 litro de caldo de legumes
+            Sal e noz-moscada
+            Modo de Preparo
+            Refogue a cebola na manteiga.
+            Acrescente a abóbora e o caldo.
+            Cozinhe até ficar macia e bata no liquidificador.
+            Tempere e aqueça novamente.
+          </p>
+          <button class="btn-ler-mais">Ler mais</button>
         </div>
       </article>
 
       <article class="card">
-        <img src="URL_DA_SUA_IMAGEM_AQUI" alt="Sopa cremosa de abóbora">
+        <img src="fotos/sopas/SopaCebolaFrancesa.jpeg" alt="Sopa de Cebola Francesa">
         <div class="card-info">
-          <h4>Sopa cremosa de abóbora</h4>
-          <p>Leve e aveludada, ideal para noites frias.</p>
+          <h4>Sopa de Cebola Francesa</h4>
+          <p class="texto-curto">
+            Famosa na culinária francesa, é encorpada e servida com pão gratinado.
+          </p>
+          <p class="texto-completo" style="display:none;">
+            Ingredientes
+            4 cebolas fatiadas
+            2 colheres (sopa) de manteiga
+            1 litro de caldo de carne
+            Pão francês
+            Queijo gruyère ou mussarela
+            Sal e pimenta
+            Modo de Preparo
+            Derreta a manteiga e caramelize as cebolas.
+            Acrescente o caldo e cozinhe por 20 minutos.
+            Sirva com pão e queijo gratinado.
+          </p>
+          <button class="btn-ler-mais">Ler mais</button>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="fotos/sopas/CanjaGalinha.jpeg" alt="Canja de Galinha">
+        <div class="card-info">
+          <h4>Canja de Galinha</h4>
+          <p class="texto-curto">
+            A clássica canja, reconfortante e caseira, ideal para dias frios ou recuperação.
+          </p>
+          <p class="texto-completo" style="display:none;">
+            Ingredientes
+            1 peito de frango
+            1 cenoura
+            1 batata
+            1 xícara de arroz
+            Cebola e alho
+            Sal
+            Modo de Preparo
+            Cozinhe o frango e desfie
+            Refogue cebola e alho, e adicione arroz e legumes.
+            Acrescente o caldo do frango e cozinhe.
+          </p>
+          <button class="btn-ler-mais">Ler mais</button>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="fotos/sopas/CaldoVerdePortuguês.jpeg" alt="Caldo Verde Português">
+        <div class="card-info">
+          <h4>Caldo Verde Português</h4>
+          <p class="texto-curto">
+            Tradicional sopa portuguesa feita com couve, batata e chouriço, perfeita para dias frios.
+          </p>
+          <p class="texto-completo" style="display:none;">
+            Ingredientes
+            4 batatas
+            1 cebola
+            1 dente de alho
+            Couve fatiada
+            Calabresa
+            Sal
+            Modo de Preparo
+            Cozinhe batata, cebola e alho.
+            Bata tudo no liquidificador.
+            Volte à panela, adicione a couve e a calabresa.
+            Cozinhe 5 minutos.
+          </p>
+          <button class="btn-ler-mais">Ler mais</button>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="fotos/sopas/SopaLentilhas.jpeg" alt="Sopa de Lentilhas">
+        <div class="card-info">
+          <h4>Sopa de Lentilhas</h4>
+          <p class="texto-curto">
+            Rica em fibras e proteínas, muito nutritiva e deliciosa.
+          </p>
+          <p class="texto-completo" style="display:none;">
+            Ingredientes
+            2 xícaras de lentilhas
+            1 cenoura
+            1 cebola
+            2 dentes de alho
+            Água ou caldo
+            Sal e louro
+            Modo de Preparo
+            Refogue cebola e alho.
+            Acrescente lentilhas, cenoura e água.
+            Cozinhe até amaciar e finalize com sal e louro.
+          </p>
+          <button class="btn-ler-mais">Ler mais</button>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="fotos/sopas/SopaTomate.jpeg" alt="Sopa de Tomate Cremosa">
+        <div class="card-info">
+          <h4>Sopa de Tomate Cremosa</h4>
+          <p class="texto-curto">
+            Perfumada e levemente ácida, ótima para acompanhar torradas ou sanduíches.
+          </p>
+          <p class="texto-completo" style="display:none;">
+            Ingredientes
+            6 tomates
+            1 cebola
+            1 colher (sopa) de manteiga
+            200 ml de creme de leite
+            Sal e açúcar
+            Modo de Preparo
+            Refogue a cebola.
+            Adicione os tomates picados e água.
+            Cozinhe e bata no liquidificador.
+            Volte à panela, acrescente creme de leite e ajuste o tempero.
+          </p>
+          <button class="btn-ler-mais">Ler mais</button>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="fotos/sopas/SopaMandioquinha.jpeg" alt="Sopa de Mandioquinha">
+        <div class="card-info">
+          <h4>Sopa de Mandioquinha</h4>
+          <p class="texto-curto">
+            Leve, aveludada e muito aromática, com sabor característico da mandioquinha.
+          </p>
+          <p class="texto-completo" style="display:none;">
+            Ingredientes
+            500 g de mandioquinha
+            1 cebola
+            1 colher (sopa) de manteiga
+            Caldo de legumes
+            Sal
+            Modo de Preparo
+            Cozinhe a mandioquinha com caldo.
+            Bata no liquidificador.
+            Volte à panela, tempere e sirva.
+          </p>
+          <button class="btn-ler-mais">Ler mais</button>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="fotos/sopas/SopaFeijão.jpeg" alt="Sopa de Feijão">
+        <div class="card-info">
+          <h4>Sopa de Feijão</h4>
+          <p class="texto-curto">
+            Clássica, saborosa e encorpada, excelente para jantares rápidos.
+          </p>
+          <p class="texto-completo" style="display:none;">
+            Ingredientes
+            2 xícaras de feijão cozido
+            1 cebola
+            1 dente de alho
+            Bacon (opcional)
+            Água
+            Sal
+            Modo de Preparo
+            Bata o feijão cozido com um pouco de água.
+            Refogue cebola, alho e bacon.
+            Adicione o feijão batido e deixe ferver.
+          </p>
+          <button class="btn-ler-mais">Ler mais</button>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="fotos/sopas/SopaCogumelosCremosa.jpeg" alt="Sopa de Cogumelos Cremosa">
+        <div class="card-info">
+          <h4>Sopa de Cogumelos Cremosa</h4>
+          <p class="texto-curto">
+            Elegante e rica, com sabor intenso de cogumelos frescos.
+          </p>
+          <p class="texto-completo" style="display:none;">
+            Ingredientes
+            300 g de cogumelos
+            1 cebola
+            1 colher (sopa) de manteiga
+            1 colher (sopa) de farinha
+            500 ml de leite
+            Sal e pimenta
+            Modo de Preparo
+            Refogue cebola e cogumelos.
+            Acrescente farinha e mexa.
+            Adicione leite aos poucos.
+            Cozinhe até engrossar.
+          </p>
+          <button class="btn-ler-mais">Ler mais</button>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="fotos/sopas/SopaPeixe.jpeg" alt="Sopa de Peixe">
+        <div class="card-info">
+          <h4>Sopa de Peixe</h4>
+          <p class="texto-curto">
+            Saborosa e reconfortante, típica de regiões costeiras.
+          </p>
+          <p class="texto-completo" style="display:none;">
+            Ingredientes
+            500 g de peixe em cubos
+            1 cebola
+            1 tomate
+            1 pimentão
+            Caldo de peixe
+            Coentro
+            Modo de Preparo
+            Refogue os legumes.
+            Adicione o peixe e o caldo.
+            Cozinhe por 15 minutos e finalize com coentro.
+          </p>
+          <button class="btn-ler-mais">Ler mais</button>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="fotos//sopas/MinestroneItaliano.jpeg" alt="Minestrone Italiano">
+        <div class="card-info">
+          <h4>Minestrone Italiano</h4>
+          <p class="texto-curto">
+            Uma sopa completa e rica em legumes, feijão e massa, tradicional da Itália.
+          </p>
+          <p class="texto-completo" style="display:none;">
+            Ingredientes
+            Macarrão curto
+            Feijão cozido
+            Cenoura
+            Abobrinha
+            Batata
+            Tomate
+            Cebola e alho
+            Sal e azeite
+            Modo de Preparo
+            Refogue cebola e alho.
+            Adicione legumes, água e feijão.
+            Acrescente a massa e cozinhe até ficar al dente.
+          </p>
+          <button class="btn-ler-mais">Ler mais</button>
         </div>
       </article>
     </section>
@@ -84,4 +346,5 @@
   <script src="../script.js"></script>
   <script>lucide.createIcons();</script>
 </body>
+
 </html>

@@ -1,36 +1,31 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Frutos do Mar | So Creamy</title>
 
-  <!-- Fonte -->
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
-
-  <!-- Estilos -->
-  <link rel="stylesheet" href="../style.css" />
-
-  <!-- Ícones -->
   <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="../style.css" />
 </head>
 
 <body>
-  <!-- Sidebar -->
   <aside class="sidebar" id="sidebar">
     <div class="logo">
       <h2>So Creamy</h2>
-      <p style="font-size:0.9rem; color:#ccc;">Sabores que derretem corações</p>
+      <p class="mini-slogan">Sabores que derretem corações</p>
     </div>
 
     <nav class="nav">
       <ul>
-        <li><a href="alimentacao_saudavel.html"><i data-lucide="leaf"></i>Saudável</a></li>
+        <li><a href="alimentacao_saudavel.html" class="active"><i data-lucide="leaf"></i>Saudável</a></li>
         <li><a href="aves.html"><i data-lucide="drumstick"></i>Aves</a></li>
         <li><a href="bebidas.html"><i data-lucide="coffee"></i>Bebidas</a></li>
         <li><a href="carnes.html"><i data-lucide="beef"></i>Carnes</a></li>
         <li><a href="culinaria_internacional.html"><i data-lucide="globe-2"></i>Internacional</a></li>
-        <li><a href="frutosdomar.html" class="active"><i data-lucide="fish"></i>Frutos do Mar</a></li>
+        <li><a href="frutosdomar.html"><i data-lucide="fish"></i>Frutos do Mar</a></li>
         <li><a href="massas.html"><i data-lucide="utensils"></i>Massas</a></li>
         <li><a href="saladas.html"><i data-lucide="salad"></i>Saladas</a></li>
         <li><a href="sobremesas.html"><i data-lucide="ice-cream"></i>Sobremesas</a></li>
@@ -39,54 +34,327 @@
     </nav>
   </aside>
 
-  <!-- Conteúdo principal -->
   <main class="main">
-    <header style="display:flex;justify-content:space-between;align-items:center;margin-bottom:1rem;">
+    <header style="display:flex;justify-content:space-between;align-items:center;margin-bottom:1rem">
       <div>
-        <h2 style="font-family:'Playfair Display',serif;">Frutos do Mar</h2>
-        <p style="color:#6b7280;margin:0;">Sabores frescos direto do oceano.</p>
+        <h2 style="font-family:'Playfair Display',serif">Frutos do Mar</h2>
+        <p style="color:#6b7280;margin:0">Delicie-se com nossas receitas frescas e saborosas de frutos do mar.</p>
       </div>
+
       <a href="../index.html"
-         style="text-decoration:none;color:var(--blue-600);display:flex;align-items:center;gap:0.3rem;font-weight:600;">
+        style="text-decoration:none;color:var(--blue-main);display:flex;align-items:center;gap:0.3rem;font-weight:600;">
         <i data-lucide="home"></i>
       </a>
     </header>
 
-
-    <!-- Cards -->
     <section class="cards-grid">
       <article class="card">
-        <img src="https://images.unsplash.com/photo-1604908176997-3d3a9070b1eb?auto=format&fit=crop&w=800&q=80" alt="Camarão ao alho e óleo">
+        <img src="fotos/frutosMar/CamarãoAlhoÓleo.jpeg" alt="Camarão ao Alho e Óleo">
         <div class="card-info">
-          <h4>Camarão ao alho e óleo</h4>
-          <p>Sabor intenso e irresistível, ideal para ocasiões especiais.</p>
+          <h4>Camarão ao Alho e Óleo</h4>
+          <p class="texto-curto">
+            Um clássico simples e rápido, perfeito para servir como entrada ou acompanhamento. O sabor marcante do alho
+            combina perfeitamente
+            com a suculência do camarão.
+          </p>
+          <p class="texto-completo" style="display:none;">
+            Ingredientes
+            500 g de camarão limpo
+            4 dentes de alho picados
+            3 colheres (sopa) de azeite
+            Suco de 1/2 limão
+            Sal e pimenta a gosto
+            Salsinha picada
+            Modo de Preparo
+            Tempere o camarão com limão, sal e pimenta.
+            Aqueça o azeite e doure o alho.
+            Acrescente o camarão e frite por 5 minutos.
+            Finalize com salsinha e sirva.
         </div>
       </article>
 
       <article class="card">
-        <img src="https://images.unsplash.com/photo-1603181487014-33e92f9f3527?auto=format&fit=crop&w=800&q=80" alt="Moqueca capixaba">
+        <img src="fotos/frutosMar/RisotoFrutosMar.jpeg" alt="Risoto de Frutos do Mar">
         <div class="card-info">
-          <h4>Moqueca capixaba</h4>
-          <p>Tradicional, aromática e cheia de tempero brasileiro.</p>
+          <h4>Risoto de Frutos do Mar</h4>
+          <p class="texto-curto">
+            Um prato italiano sofisticado que reúne arroz arbóreo cremoso e diferentes frutos do mar, criando um sabor
+            marcante e aromático.
+          </p>
+          <p class="texto-completo" style="display:none;">
+            Ingredientes
+            300 g de arroz arbóreo
+            300 g de camarão
+            200 g de lula em anéis
+            200 g de mexilhões
+            1 cebola picada
+            1 taça de vinho branco
+            1,5 L de caldo de peixe ou legumes
+            Manteiga e azeite
+            Sal e pimenta
+            Modo de Preparo
+            Refogue a cebola em azeite.
+            Acrescente o arroz e mexa.
+            Adicione o vinho e deixe evaporar.
+            Vá adicionando o caldo aos poucos, sempre mexendo.
+            Em outra panela, salteie os frutos do mar.
+            Quando o arroz estiver quase no ponto, misture tudo.
+            Finalize com manteiga.
+          </p>
+          <button class="btn-ler-mais">Ler mais</button>
         </div>
       </article>
 
       <article class="card">
-        <img src="https://images.unsplash.com/photo-1617196034796-73b1cb34c1ce?auto=format&fit=crop&w=800&q=80" alt="Lula grelhada">
+        <img src="fotos/frutosMar/MoquecaPeixeBaiana.jpeg" alt="Moqueca de Peixe Baiana">
         <div class="card-info">
-          <h4>Lula grelhada</h4>
-          <p>Deliciosamente leve, perfeita com toque de limão.</p>
+          <h4>Moqueca de Peixe Baiana</h4>
+          <p class="texto-curto">
+            Clássico brasileiro, com sabor intenso de dendê e leite de coco, perfeito para almoços especiais.
+          </p>
+          <p class="texto-completo" style="display:none;">
+            Ingredientes
+            1 kg de peixe (cação, robalo ou dourado)
+            2 tomates
+            1 pimentão
+            1 cebola
+            200 ml de leite de coco
+            2 colheres (sopa) de azeite de dendê
+            Coentro
+            Sal, alho e limão
+            Modo de Preparo
+            Tempere o peixe com limão, alho e sal.
+            Monte camadas de peixe, legumes e coentro na panela.
+            Adicione leite de coco e dendê.
+            Cozinhe por cerca de 20 minutos sem mexer.
+          </p>
+          <button class="btn-ler-mais">Ler mais</button>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="fotos/frutosMar/PaellaFrutosMar.jpeg" alt="Paella de Frutos do Mar">
+        <div class="card-info">
+          <h4>Paella de Frutos do Mar</h4>
+          <p class="texto-curto">
+            Tradicional prato espanhol com arroz temperado em açafrão e uma grande variedade de frutos do mar.
+          </p>
+          <p class="texto-completo" style="display:none;">
+            Ingredientesss
+            300 g de camarão
+            300 g de lula
+            300 g de mexilhão
+            2 xícaras de arroz
+            1 cebola
+            1 tomate
+            Açafrão
+            Azeite
+            Caldo de peixe
+            Modo de Preparo
+            Refogue cebola e tomate no azeite.
+            Acrescente o arroz e o açafrão.
+            Adicione o caldo e deixe cozinhar.
+            Coloque os frutos do mar e cozinhe até secar.
+          </p>
+          <button class="btn-ler-mais">Ler mais</button>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="fotos/frutosMar/LulaRecheada.jpeg" alt="Lula Recheada">
+        <div class="card-info">
+          <h4>Lula Recheada</h4>
+          <p class="texto-curto">
+            Uma receita mediterrânea suave e saborosa, perfeita para impressionar convidados.
+          </p>
+          <p class="texto-completo" style="display:none;">
+            Ingredientes
+            8 lulas grandes
+            1 xícara de farinha de rosca
+            1 dente de alho
+            Azeite
+            Sal, pimenta
+            Salsinha
+            Modo de Preparo
+            Misture farinha, alho e salsinha.
+            Recheie as lulas.
+            Leve ao forno com azeite por 25 minutos.
+          </p>
+          <button class="btn-ler-mais">Ler mais</button>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="fotos/frutosMar/CamarãoMoranga.jpeg" alt="Camarão na Moranga">
+        <div class="card-info">
+          <h4>Camarão na Moranga</h4>
+          <p class="texto-curto">
+            Prato brasileiro muito popular, com sabor cremoso e apresentação marcante.
+          </p>
+          <p class="texto-completo" style="display:none;">
+            Ingredientes
+            1 moranga
+            500 g de camarão
+            1 cebola
+            1 tomate
+            200 g de requeijão
+            200 ml de leite de coco
+            Azeite
+            Modo de Preparo
+            Asse a moranga por 40 min e retire as sementes.
+            Refogue camarão, cebola e tomate.
+            Misture leite de coco e requeijão.
+            Recheie a moranga e sirva.
+          </p>
+          <button class="btn-ler-mais">Ler mais</button>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="fotos/frutosMar/BacalhauGomesSá.jpeg" alt="Bacalhau à Gomes de Sá">
+        <div class="card-info">
+          <h4>Bacalhau à Gomes de Sá</h4>
+          <p class="texto-curto">
+            Receita portuguesa tradicional, com muito sabor e textura delicada.
+          </p>
+          <p class="texto-completo" style="display:none;">
+            Ingredientes
+            500 g de bacalhau dessalgado
+            4 batatas
+            1 cebola
+            Azeitonas
+            Azeite
+            Salsinha
+            Modo de Preparo
+            Cozinhe batatas e desfie o bacalhau.
+            Refogue cebola no azeite e misture tudo.
+            Finalize com azeitonas e salsinha.
+          </p>
+          <button class="btn-ler-mais">Ler mais</button>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="fotos/frutosMar/PolvoLagareiro.jpeg" alt="Polvo à Lagareiro">
+        <div class="card-info">
+          <h4>Polvo à Lagareiro</h4>
+          <p class="texto-curto">
+            Prato português simples, mas extremamente saboroso, feito com muito azeite e batatas assadas.
+          </p>
+          <p class="texto-completo" style="display:none;">
+            Ingredientes
+            1 polvo médio
+            Batatas pequenas
+            Azeite
+            Alho
+            Salsinha
+            Modo de Preparo
+            Cozinhe o polvo até ficar macio.
+            Asse as batatas.
+            Arrume tudo numa travessa, regue com azeite e alho, e leve ao forno por 20 min.
+          </p>
+          <button class="btn-ler-mais">Ler mais</button>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="fotos/frutosMar/FiléSalmãoGrelhado.jpeg" alt="Filé de Salmão Grelhado">
+        <div class="card-info">
+          <h4>Filé de Salmão Grelhado</h4>
+          <p class="texto-curto">
+            Receita prática e saudável, realçando o sabor natural do salmão..
+          </p>
+          <p class="texto-completo" style="display:none;">
+            Ingredientes
+            4 filés de salmão
+            Limão
+            Sal e pimenta
+            Azeite
+            Modo de Preparo
+            Tempere o salmão.
+            Grelhe 3–4 minutos de cada lado.
+          </p>
+          <button class="btn-ler-mais">Ler mais</button>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="fotos/frutosMar/EnsopadoMexilhões.jpeg" alt="Ensopado de Mexilhões">
+        <div class="card-info">
+          <h4>Ensopado de Mexilhões</h4>
+          <p class="texto-curto">
+            Prato francês clássico, leve e aromático, perfeito para servir com pão.
+          </p>
+          <p class="texto-completo" style="display:none;">
+            Ingredientes
+            1 kg de mexilhões
+            1 cebola
+            2 dentes de alho
+            1 taça de vinho branco
+            Salsinha
+            Azeite
+            Modo de Preparo
+            Refogue cebola e alho.
+            Adicione os mexilhões e o vinho.
+            Cozinhe até abrirem.
+            Finalize com salsinha.
+          </p>
+          <button class="btn-ler-mais">Ler mais</button>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="fotos/frutosMar/TilápiaMolhoErvas.jpeg" alt="Tilápia ao Molho de Ervas">
+        <div class="card-info">
+          <h4>Tilápia ao Molho de Ervas</h4>
+          <p class="texto-curto">
+            Uma opção leve e perfumada, ideal para jantares rápidos.
+          </p>
+          <p class="texto-completo" style="display:none;">
+            Ingredientes
+            4 filés de tilápia
+            Limão
+            Ervas (tomilho, orégano, salsinha)
+            Manteiga
+            Modo de Preparo
+            Tempere os filés.
+            Grelhe na manteiga.
+            Acrescente as ervas e sirva.
+          </p>
+          <button class="btn-ler-mais">Ler mais</button>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="fotos/frutosMar/CasquinhaSiri.jpeg" alt="Casquinha de Siri">
+        <div class="card-info">
+          <h4>Casquinha de Siri</h4>
+          <p class="texto-curto">
+            Uma entrada brasileira deliciosa, cremosa e com leve toque cítrico.
+          </p>
+          <p class="texto-completo" style="display:none;">
+            Ingredientes
+            500 g de carne de siri
+            1 cebola
+            1 tomate
+            1 colher (sopa) de farinha
+            Limão
+            Leite de coco
+            Azeite
+            Modo de Preparo
+            Refogue cebola e tomate.
+            Acrescente o siri e o leite de coco.
+            Coloque a farinha para engrossar.
+            Sirva em conchinhas ou ramequins.
+          </p>
+          <button class="btn-ler-mais">Ler mais</button>
         </div>
       </article>
     </section>
   </main>
 
-  <!-- Script -->
   <script src="../script.js"></script>
-  <script>
-    if (typeof lucide !== 'undefined') {
-      lucide.createIcons();
-    }
-  </script>
+  <script>lucide.createIcons();</script>
 </body>
+
 </html>

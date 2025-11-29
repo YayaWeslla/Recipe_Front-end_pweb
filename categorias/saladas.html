@@ -1,80 +1,336 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Saladas | So Creamy</title>
 
-  <!-- Fonte -->
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
-
-  <!-- Ícones -->
   <script src="https://unpkg.com/lucide@latest"></script>
-
-  <!-- Estilos -->
   <link rel="stylesheet" href="../style.css" />
 </head>
 
 <body>
-  <!-- Sidebar -->
   <aside class="sidebar" id="sidebar">
     <div class="logo">
       <h2>So Creamy</h2>
-      <p style="font-size:0.9rem; color:#ccc;">Sabores que derretem corações</p>
+      <p class="mini-slogan">Sabores que derretem corações</p>
     </div>
 
     <nav class="nav">
       <ul>
-        <li><a href="alimentacao_saudavel.html"><i data-lucide="leaf"></i>Saudável</a></li>
+        <li><a href="alimentacao_saudavel.html" class="active"><i data-lucide="leaf"></i>Saudável</a></li>
         <li><a href="aves.html"><i data-lucide="drumstick"></i>Aves</a></li>
         <li><a href="bebidas.html"><i data-lucide="coffee"></i>Bebidas</a></li>
         <li><a href="carnes.html"><i data-lucide="beef"></i>Carnes</a></li>
         <li><a href="culinaria_internacional.html"><i data-lucide="globe-2"></i>Internacional</a></li>
         <li><a href="frutosdomar.html"><i data-lucide="fish"></i>Frutos do Mar</a></li>
         <li><a href="massas.html"><i data-lucide="utensils"></i>Massas</a></li>
-        <li><a href="saladas.html" class="active"><i data-lucide="salad"></i>Saladas</a></li>
+        <li><a href="saladas.html"><i data-lucide="salad"></i>Saladas</a></li>
         <li><a href="sobremesas.html"><i data-lucide="ice-cream"></i>Sobremesas</a></li>
         <li><a href="sopas.html"><i data-lucide="cup-soda"></i>Sopas</a></li>
       </ul>
     </nav>
   </aside>
 
-  <!-- Conteúdo -->
   <main class="main">
     <header style="display:flex;justify-content:space-between;align-items:center;margin-bottom:1rem">
       <div>
         <h2 style="font-family:'Playfair Display',serif">Saladas</h2>
-        <p style="color:#6b7280;margin:0">Leves, frescas e cheias de sabor.</p>
+        <p style="color:#6b7280;margin:0">Delicie-se com nossas receitas frescas e saborosas de saladas.</p>
       </div>
-     <a href="../index.html"
-         style="text-decoration:none;color:var(--blue-600);display:flex;align-items:center;gap:0.3rem;font-weight:600;">
+
+      <a href="../index.html"
+        style="text-decoration:none;color:var(--blue-main);display:flex;align-items:center;gap:0.3rem;font-weight:600;">
         <i data-lucide="home"></i>
       </a>
     </header>
 
-    <!-- Cards -->
     <section class="cards-grid">
       <article class="card">
-        <img src="URL_DA_SUA_IMAGEM_AQUI" alt="Salada Caesar">
+        <img src="fotos/saladas/SaladaCaesarTradicional.jpeg" alt="Salada Caesar Tradicional">
         <div class="card-info">
-          <h4>Salada Caesar</h4>
-          <p>Clássica com molho cremoso e crocantes croutons.</p>
+          <h4>Salada Caesar Tradicional</h4>
+          <p class="texto-curto">
+            Clássica e mundialmente famosa, é conhecida pelo molho cremoso e pelo contraste entre alface crocante,
+            croutons e queijo parmesão.
+          </p>
+          <p class="texto-completo" style="display:none;">
+            Ingredientes
+            1 pé de alface romana
+            1 xícara de croutons
+            50 g de parmesão ralado
+            2 colheres (sopa) de maionese
+            1 dente de alho
+            Suco de 1 limão
+            1 colher (sopa) de azeite
+            Sal e pimenta
+            Modo de Preparo
+            Misture maionese, limão, alho, sal e azeite para formar o molho.
+            Rasgue as folhas de alface.
+            Misture alface, croutons e molho.
+            Finalize com parmesão.
         </div>
       </article>
 
       <article class="card">
-        <img src="URL_DA_SUA_IMAGEM_AQUI" alt="Salada Grega">
+        <img src="fotos/saladas/SaladaGrega.jpeg" alt="Salada Grega">
         <div class="card-info">
           <h4>Salada Grega</h4>
-          <p>Colorida e saborosa com queijo feta e azeitonas.</p>
+          <p class="texto-curto">
+            Leve e refrescante, combina legumes frescos com queijo feta e azeite, típica da culinária mediterrânea.
+          </p>
+          <p class="texto-completo" style="display:none;">
+            Ingredientes
+            1 pepino picado
+            2 tomates em cubos
+            1 cebola roxa em tiras
+            100 g de queijo feta
+            Azeitonas pretas
+            Azeite, sal e orégano
+            Modo de Preparo
+            Misture todos os legumes.
+            Adicione as azeitonas e o feta.
+            Tempere com azeite, sal e orégano.
+          </p>
+          <button class="btn-ler-mais">Ler mais</button>
         </div>
       </article>
 
       <article class="card">
-        <img src="URL_DA_SUA_IMAGEM_AQUI" alt="Salada Tropical">
+        <img src="fotos/saladas/SaladaCaprese.jpeg" alt="Salada Caprese">
         <div class="card-info">
-          <h4>Salada Tropical</h4>
-          <p>Combinação refrescante de frutas e folhas verdes.</p>
+          <h4>Salada Caprese</h4>
+          <p class="texto-curto">
+            Uma salada italiana clássica, simples e elegante, que destaca os sabores frescos do tomate, manjericão e
+            muçarela.
+          </p>
+          <p class="texto-completo" style="display:none;">
+            Ingredientes
+            Tomates fatiados
+            Muçarela de búfala
+            Folhas de manjericão
+            Azeite
+            Pimenta e sal
+            Modo de Preparo
+            Monte camadas alternadas de tomate e muçarela.
+            Acrescente manjericão.
+            Tempere com azeite e pimenta.
+          </p>
+          <button class="btn-ler-mais">Ler mais</button>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="fotos/saladas/SaladaTropicalFrango.jpeg" alt="Salada Tropical com Frango">
+        <div class="card-info">
+          <h4>Salada Tropical com Frango</h4>
+          <p class="texto-curto">
+            Colorida, fresca e nutritiva, mistura frutas tropicais com frango grelhado, perfeita para dias quentes.
+          </p>
+          <p class="texto-completo" style="display:none;">
+            Ingredientes
+            1 peito de frango grelhado em tiras
+            Manga picada
+            Abacaxi picado
+            Alface
+            Azeite e limão
+            Sal
+            Modo de Preparo
+            Grelhe o frango e corte em tiras.
+            Monte a salada com frutas e alface.
+            Tempere com azeite, limão e sal.
+          </p>
+          <button class="btn-ler-mais">Ler mais</button>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="fotos/saladas/SaladaBatataCremosa.jpeg" alt="Salada de Batata Cremosa">
+        <div class="card-info">
+          <h4>Salada de Batata Cremosa</h4>
+          <p class="texto-curto">
+            Perfeita para churrascos, combina batatas macias com um molho cremoso e temperado.
+          </p>
+          <p class="texto-completo" style="display:none;">
+            Ingredientes
+            4 batatas médias
+            3 colheres (sopa) de maionese
+            1 cenoura ralada
+            1 cebola picada
+            Salsinha
+            Sal e pimenta
+            Modo de Preparo
+            Cozinhe as batatas e corte em cubos.
+            Misture com os demais ingredientes.
+            Ajuste o sal e deixe na geladeira.
+          </p>
+          <button class="btn-ler-mais">Ler mais</button>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="fotos/saladas/SaladaGrão-de-Bico.jpeg" alt="Salada de Grão-de-Bico">
+        <div class="card-info">
+          <h4>Salada de Grão-de-Bico</h4>
+          <p class="texto-curto">
+            Rica em proteínas e muito saborosa, ótima para refeições leves e nutritivas.
+          </p>
+          <p class="texto-completo" style="display:none;">
+            Ingredientes
+            2 xícaras de grão-de-bico cozido
+            1 tomate
+            1 cebola roxa
+            Azeite
+            Vinagre
+            Coentro ou salsinha
+            Modo de Preparo
+            Misture todos os ingredientes.
+            Tempere com azeite e vinagre.
+            Finalize com coentro.
+          </p>
+          <button class="btn-ler-mais">Ler mais</button>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="fotos/saladas/SaladaQuinoaLegumes.jpeg" alt="Salada de Quinoa com Legumes">
+        <div class="card-info">
+          <h4>Salada de Quinoa com Legumes</h4>
+          <p class="texto-curto">
+            Alternativa saudável e moderna, combina quinoa com vegetais frescos e um toque cítrico.
+          </p>
+          <p class="texto-completo" style="display:none;">
+            Ingredientes
+            1 xícara de quinoa cozida
+            Pepino
+            Tomate cereja
+            Cebola roxa
+            Limão
+            Azeite
+            Modo de Preparo
+            Misture os legumes picados com a quinoa.
+            Tempere com limão e azeite.
+          </p>
+          <button class="btn-ler-mais">Ler mais</button>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="fotos/saladas/SaladaWaldorf.jpeg" alt="Salada Waldorf">
+        <div class="card-info">
+          <h4>Salada Waldorf</h4>
+          <p class="texto-curto">
+            Tradicional salada americana que combina maçã, nozes e salsão com molho cremoso.
+          </p>
+          <p class="texto-completo" style="display:none;">
+            Ingredientes
+            2 maçãs picadas
+            1 talo de salsão
+            1/2 xícara de nozes picadas
+            3 colheres (sopa) de maionese
+            Suco de 1 limão
+            Modo de Preparo
+            Misture maçã, salsão e nozes.
+            Adicione o molho de maionese com limão.
+            Mexa bem e sirva gelada.
+          </p>
+          <button class="btn-ler-mais">Ler mais</button>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="fotos/saladas/SaladaAtumFeijãoBranco.jpeg" alt="Salada de Atum com Feijão Branco">
+        <div class="card-info">
+          <h4>Salada de Atum com Feijão Branco</h4>
+          <p class="texto-curto">
+            Leve, proteica e muito prática, excelente para uma refeição rápida.
+          </p>
+          <p class="texto-completo" style="display:none;">
+            Ingredientes
+            1 lata de atum
+            1 xícara de feijão branco cozido
+            Cebola roxa
+            Azeite
+            Salsinha
+            Sal
+            Modo de Preparo
+            Misture todos os ingredientes.
+            Tempere com azeite e sal.
+          </p>
+          <button class="btn-ler-mais">Ler mais</button>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="fotos/saladas/SaladaPepinoOriental.jpeg" alt="Salada de Pepino Oriental">
+        <div class="card-info">
+          <h4>Salada de Pepino Oriental</h4>
+          <p class="texto-curto">
+            Refrescante e crocante, com um toque agridoce tradicional da culinária asiática.
+          </p>
+          <p class="texto-completo" style="display:none;">
+            Ingredientes
+            2 pepinos fatiados
+            2 colheres (sopa) de molho shoyu
+            1 colher (sopa) de vinagre
+            Gergelim
+            Açúcar
+            Modo de Preparo
+            Misture shoyu, vinagre e um pouco de açúcar.
+            Adicione os pepinos.
+            Finalize com gergelim.
+          </p>
+          <button class="btn-ler-mais">Ler mais</button>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="fotos/saladas/SaladaAbacateTomate.jpeg" alt="Salada de Abacate com Tomate">
+        <div class="card-info">
+          <h4>Salada de Abacate com Tomate</h4>
+          <p class="texto-curto">
+            Combinação cremosa e fresca, rica em gorduras boas e perfeita como acompanhamento.
+          </p>
+          <p class="texto-completo" style="display:none;">
+            Ingredientes
+            1 abacate em cubos
+            2 tomates picados
+            1 cebola
+            Limão
+            Azeite
+            Sal
+            Modo de Preparo
+            Misture abacate, tomate e cebola.
+            Tempere com limão, azeite e sal.
+          </p>
+          <button class="btn-ler-mais">Ler mais</button>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="fotos/saladas/Salada RúculaParmesãoTomate Seco.jpeg"
+          alt="Salada de Rúcula com Parmesão e Tomate Seco">
+        <div class="card-info">
+          <h4>Salada de Rúcula com Parmesão e Tomate Seco</h4>
+          <p class="texto-curto">
+            Elegante e cheia de sabor, perfeita para acompanhar carnes e massas.
+          </p>
+          <p class="texto-completo" style="display:none;">
+            Ingredientes
+            1 maço de rúcula
+            Tomate seco picado
+            Lascas de parmesão
+            Azeite
+            Vinagre balsâmico
+            Sal
+            Modo de Preparo
+            Arrume a rúcula em uma travessa.
+            Adicione o tomate seco e o parmesão.
+            Tempere com azeite e balsâmico.
+          </p>
+          <button class="btn-ler-mais">Ler mais</button>
         </div>
       </article>
     </section>
